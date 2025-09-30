@@ -1,0 +1,31 @@
+title_ar,title_en,description_ar,description_en,image,price_egp,price_usd,category,subCategory,duration,course_type,content,content_details,framework,initial_payment_percentage,start_dates,certificate_details,location_country_ar,location_country_en,location_city_ar,location_city_en,location_address,brochure
+Intro to Programming,Intro to Programming,تعلم أساسيات البرمجة,Learn programming basics,https://example.com/image.jpg,1500,50,Introduction to Netwroking and Ehs,Introduction to Netwroking and EH,40,Online,"[""Module 1"",""Module 2"",""Module 3""]","[
+    {
+      ""title"": ""HTML Basics"",
+      ""content"": [""Introduction to HTML"", ""HTML Elements""]
+    },
+    {
+      ""title"": ""CSS Fundamentals"",
+      ""content"": [""CSS Syntax"", ""Styling Elements""]
+    }
+  ]",Python,100,"[{""date"":""2025-08-01"",""available_slots"":30},{""date"":""2025-09-01"",""available_slots"":25}]",Certificate of Completion,,,,,,No brochure yet
+Advanced Data Science,Advanced Data Science,دورة متقدمة في علوم البيانات,Advanced course in data science,https://example.com/data.jpg,3000,100,Introduction to Netwroking and EHs ,Introduction to Netwroking and EH,60,Recorded,"[""ML"",""DL"",""NLP""]","[
+    {
+      ""title"": ""HTML Basics"",
+      ""content"": [""Introduction to HTML"", ""HTML Elements""]
+    },
+    {
+      ""title"": ""CSS Fundamentals"",
+      ""content"": [""CSS Syntax"", ""Styling Elements""]
+    }
+  ]",TensorFlow,50,"[{""date"":""2025-08-01"",""available_slots"":30},{""date"":""2025-09-01"",""available_slots"":25}]",Advanced Certificate,,,,,,No brochure yet
+Web Development Bootcamp,Web Dev Bootcamp,معسكر تطوير الويب,Web development bootcamp,https://example.com/web.jpg,5000,150, Introduction to Netwroking and Ehs,Introduction to Netwroking and EH,80,Offline,"[""HTML"",""CSS"",""JS""]","[
+    {
+      ""title"": ""HTML Basics"",
+      ""content"": [""Introduction to HTML"", ""HTML Elements""]
+    },
+    {
+      ""title"": ""CSS Fundamentals"",
+      ""content"": [""CSS Syntax"", ""Styling Elements""]
+    }
+  ]",React,30,"[{""date"":""2025-07-15"",""available_slots"":20}]",Professional Certificate,مصر,Egypt,القاهرة,Cairo,"123 Main St, Cairo",https://example.com/brochure.pdf

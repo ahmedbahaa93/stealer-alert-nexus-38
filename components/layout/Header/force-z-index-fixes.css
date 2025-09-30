@@ -1,0 +1,80 @@
+/* 
+ * Force Z-index fixes 
+ * This file ensures the mobile menu appears above all content 
+ */
+
+/* Root stacking context */
+#__next, body > div, main, .home-page {
+  isolation: auto !important;
+}
+
+/* Create global stacking context for all content */
+body.menu-open::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Force the menu to be visible */
+.stunning-menu.visible, .stunning-backdrop.visible {
+  visibility: visible !important;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+/* Correct stacking for hero section */
+[data-section="hero"] {
+  z-index: 1;
+  position: relative;
+}
+
+/* Correct stacking for header */
+header, nav {
+  z-index: 9999;
+  position: relative;
+}
+
+/* Force menu on top of everything */
+.stunning-menu, .stunning-backdrop {
+  position: fixed !important;
+  z-index: 9999999 !important;
+}
+
+/* Create a higher stacking context for the menu button */
+.menu-toggle {
+  z-index: 10000000 !important;
+  position: relative;
+}
+
+/* Fix for iOS devices */
+@supports (-webkit-touch-callout: none) {
+  .stunning-menu {
+    transform: translate3d(0,0,0);
+  }
+}
+
+/* Portal for menu components */
+.mobile-menu-portal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999990;
+  pointer-events: none;
+}
+
+.mobile-menu-portal .stunning-backdrop,
+.mobile-menu-portal .stunning-menu {
+  pointer-events: auto;
+}
+
+/* Higher specificity for critical elements */
+body .stunning-menu,
+body .stunning-backdrop,
+html .stunning-menu,
+html .stunning-backdrop {
+  z-index: 9999999 !important;
+}

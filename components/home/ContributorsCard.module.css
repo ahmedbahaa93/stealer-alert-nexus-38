@@ -1,0 +1,27 @@
+/* Contributors Card Hover Effects - Exactly Same as Course Cards */
+
+.cardContainer {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 240px;
+  margin: 15px 5px;
+  padding: 10px;
+  transform-origin: center center;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: visible !important;
+  transform-style: preserve-3d;
+}
+
+.cardContainer:hover {
+  z-index: 10;
+  transform: scale(1.05) translateY(-8px);
+}
+
+.cardContainer:hover .contributorCard {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.contributorCard {
+  transition: box-shadow 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}

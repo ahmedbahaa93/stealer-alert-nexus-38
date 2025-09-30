@@ -1,0 +1,58 @@
+/* 
+ * Counterbuters Animation CSS
+ * Smooth animation effects for counterbuters cards
+ */
+
+/* Card hover animation */
+@keyframes smoothScale {
+  0% {
+    transform: scale(1) translateZ(0);
+  }
+  100% {
+    transform: scale(1.03) translateZ(0);
+  }
+}
+
+/* Border animation */
+@keyframes smoothBorderGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Apply smooth animations */
+.counterbuters-card {
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1), 
+              box-shadow 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+.counterbuters-card:hover {
+  animation: smoothScale 0.5s cubic-bezier(0.2, 0, 0.2, 1) forwards;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.counterbuters-border {
+  background-size: 200% 200%;
+}
+
+.counterbuters-border:hover {
+  animation: smoothBorderGradient 3s ease infinite;
+}
+
+/* Fix for Safari */
+@media not all and (min-resolution:.001dpcm) { 
+  @supports (-webkit-appearance:none) {
+    .counterbuters-card, .counterbuters-border {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transform: translateZ(0) scale(1.0, 1.0);
+      transform: translateZ(0) scale(1.0, 1.0);
+    }
+  }
+}

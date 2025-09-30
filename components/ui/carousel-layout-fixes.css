@@ -1,0 +1,401 @@
+/* ===== SUPER PERFECT CAROUSEL LOGIC ===== */
+/* Ultimate carousel layout solution for Next.js + TypeScript */
+
+/* ===== CORE CAROUSEL RESET ===== */
+.carousel-wrapper,
+.carousel-viewport,
+.carousel-container-inner,
+.carousel-item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== CAROUSEL WRAPPER (ROOT CONTAINER) ===== */
+.carousel-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  padding: 40px 20px; /* Reduced side padding to keep content width consistent */
+  margin: 0;
+  isolation: isolate; /* Create new stacking context */
+  z-index: 1;
+}
+
+.carousel-wrapper.carousel-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+.carousel-wrapper.carousel-ready {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Ensure carousel has proper height for card hover effects */
+.carousel-wrapper {
+  min-height: 420px; /* Allow extra space for card hover scaling */
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+/* Special section for card hover effects */
+.card-hover-section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  overflow: visible !important;
+  position: relative;
+  z-index: 1;
+  margin: 15px 0;
+}
+
+/* Card hover effect handling */
+.card-hover-section .carousel-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* ===== CAROUSEL VIEWPORT (EMBLA CONTAINER) ===== */
+.carousel-viewport {
+  width: 100%;
+  position: relative;
+  overflow: hidden; /* CRITICAL: Only viewport should hide overflow */
+  border-radius: 8px;
+  touch-action: pan-x pinch-zoom;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* ===== CAROUSEL CONTAINER (FLEX CONTAINER) ===== */
+.carousel-container-inner {
+  display: flex;
+  width: 100%;
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0); /* Hardware acceleration */
+  transition: transform 0.2s ease;
+}
+
+/* ===== CAROUSEL ITEMS ===== */
+.carousel-item {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0;
+  transform: translateZ(0); /* Hardware acceleration */
+  z-index: 1;
+}
+
+/* Allow hover effects to escape */
+.carousel-item:hover {
+  z-index: 10;
+}
+
+/* ===== NAVIGATION BUTTONS ===== */
+.carousel-nav-btn {
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.2s ease-in-out;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-nav-prev {
+  left: 4px;
+}
+
+.carousel-nav-next {
+  right: 4px;
+}
+
+.carousel-nav-btn:hover {
+  transform: translateY(-50%) scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.carousel-nav-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  transform: translateY(-50%) scale(0.95);
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 640px) {
+  .carousel-wrapper {
+    padding: 20px 50px;
+  }
+  
+  .carousel-nav-prev {
+    left: 10px;
+  }
+  
+  .carousel-nav-next {
+    right: 10px;
+  }
+  
+  .carousel-nav-btn {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  .carousel-wrapper {
+    padding: 30px 55px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .carousel-wrapper {
+    padding: 40px 60px;
+  }
+}
+
+/* ===== RTL SUPPORT ===== */
+:root.ar .carousel-viewport {
+  direction: ltr; /* Keep carousel mechanics LTR */
+}
+
+:root.ar .carousel-container-inner {
+  direction: ltr;
+}
+
+:root.ar .carousel-item {
+  direction: rtl; /* Only content should be RTL */
+}
+
+/* Fixed button positioning for RTL */
+:root.ar .carousel-nav-prev {
+  right: 4px;
+  left: auto;
+}
+
+:root.ar .carousel-nav-next {
+  left: 4px;
+  right: auto;
+}
+
+:root.ar .carousel-item .card-content,
+:root.ar .carousel-item .card-title,
+:root.ar .carousel-item .card-description {
+  text-align: right;
+}
+
+/* ===== SECTION CONTAINER FIXES ===== */
+.section-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 30px 0; /* Increased padding to accommodate card hover effects */
+  overflow: visible !important; /* Force allow carousel hover effects */
+  z-index: 1;
+  min-height: 400px; /* Ensure enough height for hover effects */
+}
+
+/* ===== PAGE LAYOUT FIXES ===== */
+.home-page {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: visible; /* Allow vertical scroll */
+}
+
+.home-page main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+/* ===== BACKGROUND SECTION FIXES ===== */
+.common-bg,
+.hero,
+.terms-section,
+.about-section,
+.course-section,
+.bg-primary-identity {
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+}
+
+/* ===== CARD HOVER EFFECTS PROTECTION ===== */
+.carousel-item .bg-card,
+.carousel-item [class*="hover:"],
+.carousel-item [class*="transform"],
+.carousel-item [class*="scale"],
+.carousel-item [class*="shadow"] {
+  position: relative;
+  z-index: 1;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* Enhanced card container to prevent clipping */
+.card-container {
+  position: relative;
+  z-index: 5;
+  margin: 15px 5px;
+  padding: 10px;
+  transform-origin: center center;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease;
+  overflow: visible !important;
+}
+
+/* Fix for card hover effect getting clipped */
+.carousel-item:hover .card-container {
+  z-index: 10;
+  transform: scale(1.03) translateY(-5px);
+}
+
+/* ===== ANIMATION PERFORMANCE ===== */
+.carousel-wrapper,
+.carousel-viewport,
+.carousel-container-inner,
+.carousel-item,
+.carousel-nav-btn {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* ===== EMBLA SPECIFIC OVERRIDES ===== */
+.embla {
+  position: relative;
+  width: 100%;
+}
+
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.embla__slide {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 0;
+}
+
+/* ===== ACCESSIBILITY ENHANCEMENTS ===== */
+@media (prefers-reduced-motion: reduce) {
+  .carousel-wrapper,
+  .carousel-nav-btn,
+  .carousel-viewport {
+    transition: none;
+  }
+  
+  .carousel-container-inner {
+    scroll-behavior: auto;
+  }
+}
+
+/* ===== FOCUS MANAGEMENT ===== */
+.carousel-wrapper:focus-within .carousel-nav-btn {
+  opacity: 1;
+}
+
+.carousel-nav-btn:focus-visible {
+  outline: 2px solid hsl(var(--primary));
+  outline-offset: 2px;
+}
+
+/* ===== LOADING STATE ===== */
+.carousel-loading .carousel-nav-btn {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.carousel-loading .carousel-viewport {
+  opacity: 0.7;
+}
+
+/* ===== TOUCH INTERACTIONS ===== */
+.carousel-viewport {
+  cursor: grab;
+  touch-action: pan-x;
+}
+
+.carousel-viewport:active {
+  cursor: grabbing;
+}
+
+.carousel-viewport.is-dragging {
+  cursor: grabbing;
+}
+
+/* ===== Z-INDEX MANAGEMENT ===== */
+.carousel-wrapper {
+  z-index: 1;
+}
+
+.carousel-viewport {
+  z-index: 2;
+}
+
+.carousel-item {
+  z-index: 3;
+}
+
+.carousel-item:hover {
+  z-index: 10;
+}
+
+.carousel-nav-btn {
+  z-index: 20;
+}
+
+/* ===== PREVENT LAYOUT SHIFT ===== */
+.carousel-wrapper {
+  contain: layout style;
+}
+
+.carousel-viewport {
+  contain: layout;
+}
+
+/* ===== CONTENT VISIBILITY OPTIMIZATION ===== */
+.carousel-item {
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
+}
+
+/* ===== DEBUG UTILITIES (Remove in production) ===== */
+.debug-carousel .carousel-wrapper {
+  border: 2px solid red !important;
+}
+
+.debug-carousel .carousel-viewport {
+  border: 2px solid blue !important;
+}
+
+.debug-carousel .carousel-container-inner {
+  border: 2px solid green !important;
+}
+
+.debug-carousel .carousel-item {
+  border: 1px solid orange !important;
+}

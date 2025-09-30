@@ -1,0 +1,136 @@
+/* Enhanced card hover effects */
+.card-hover-effect {
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  z-index: 1;
+}
+
+/* Fix for card container overflow issue */
+.card-container {
+  position: relative;
+  z-index: 1;
+  padding: 5px;
+  margin: -5px;
+  overflow: visible !important;
+}
+
+.card-hover-effect::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.card-hover-effect::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg, 
+    rgba(var(--card-glow-rgb, 0, 122, 255), 0.5) 0%,
+    rgba(var(--card-glow-rgb, 0, 122, 255), 0) 50%,
+    rgba(var(--card-glow-rgb, 0, 122, 255), 0) 100%
+  );
+  opacity: 0;
+  transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.card-hover-effect:hover {
+  transform: translateY(-5px) rotateX(3deg) rotateY(-3deg);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.card-hover-effect:hover::before {
+  opacity: 1;
+}
+
+.card-hover-effect:hover::after {
+  opacity: 0.8;
+}
+
+/* Subtle inner elements animations */
+.card-hover-effect .card-content {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-hover-effect:hover .card-content {
+  transform: translateZ(10px);
+}
+
+.card-hover-effect .card-image {
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
+              filter 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-hover-effect:hover .card-image {
+  transform: scale(1.03);
+  filter: brightness(1.05);
+}
+
+.card-hover-effect .card-title {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.card-hover-effect:hover .card-title {
+  transform: translateY(-2px);
+}
+
+.card-hover-effect .card-button {
+  transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  transform-style: preserve-3d;
+}
+
+.card-hover-effect:hover .card-button {
+  transform: translateY(-2px) translateZ(20px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Theme-sensitive glows */
+.light .card-hover-effect {
+  --card-glow-rgb: 0, 122, 255;
+}
+
+.dark .card-hover-effect {
+  --card-glow-rgb: 10, 132, 255;
+}
+
+/* Testimonial card specific effects */
+.card-description {
+  position: relative;
+  z-index: 1;
+}
+
+.card-description:hover {
+  transform: translateY(-2px);
+}
+
+/* Advanced hover effects for quotes */
+@keyframes float-quote {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(5deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
+
+.testimonial-quote:hover {
+  animation: float-quote 3s ease-in-out infinite;
+}
+
+/* Ensure no overflow hiding in carousel items */
+.carousel-item {
+  overflow: visible !important;
+}

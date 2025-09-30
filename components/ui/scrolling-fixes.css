@@ -1,0 +1,52 @@
+/* 
+ * Scrolling Fixes
+ * Fixes for scrollbar issues and smooth scrolling
+ */
+
+/* Hide all inner scrollbars except the main document scrollbar */
+.section-container::-webkit-scrollbar,
+.carousel::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar,
+.menu-content::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* For Firefox */
+.section-container,
+.carousel,
+.carousel-content,
+.menu-content {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+/* Prevent body scrollbar when modal is open */
+body.modal-open {
+  overflow: hidden !important;
+}
+
+/* Fix laggy scroll behavior */
+* {
+  scroll-behavior: auto !important;
+}
+
+html.smooth-scroll {
+  scroll-behavior: smooth !important;
+}
+
+/* Fix for jerky scroll animations */
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Make sure all overflow elements use hardware acceleration */
+.overflow-fix {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}

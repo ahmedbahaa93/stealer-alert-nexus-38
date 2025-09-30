@@ -1,0 +1,28 @@
+{
+  "Categories": {
+    "errors": {
+      "errorTitle": "خطأ في تحميل الدورات",
+      "errorMessage": "لم نتمكن من تحميل الدورات في الوقت الحالي. يرجى المحاولة مرة أخرى بعد قليل.",
+      "retry": "حاول مرة أخرى",
+      "subCategoriesError": "تعذر تحميل الفئات الفرعية",
+      "coursesError": "تعذر تحميل الدورات لهذه الفئة الفرعية"
+    },
+    "empty": {
+      "emptyTitle": "لم يتم العثور على دورات",
+      "emptyMessage": "لا توجد دورات متاحة في هذه الفئة في الوقت الحالي.",
+      "browseMoreCourses": "تصفح الفئات الأخرى",
+      "noSubCategories": "لم يتم العثور على فئات فرعية",
+      "noCourses": "لم يتم العثور على دورات في هذه الفئة الفرعية"
+    },
+    "loading": {
+      "loadingSubCategories": "جاري تحميل الفئات الفرعية...",
+      "loadingCourses": "جاري تحميل الدورات..."
+    },
+    "actions": {
+      "selectSubCategory": "اختر",
+      "moreDetails": "المزيد من التفاصيل",
+      "enrollNow": "سجل الآن",
+      "chooseMajor": "اختر التخصص الذي تريده"
+    }
+  }
+}

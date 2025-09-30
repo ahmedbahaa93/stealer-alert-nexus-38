@@ -1,0 +1,127 @@
+1- get user profile:
+- endpoint: {{url}}api/v1/user/profile
+- response json: {
+    "status": "success",
+    "data": {
+        "avatar": "https://iili.io/29bjKZP.jpg",
+        "personal_info": {
+            "full_name": "goda goda",
+            "email": "goda@gmail.com",
+            "phone_number": "+201122438252",
+            "gender": "Male",
+            "date_of_birth": "2003-06-16",
+            "location": {
+                "country": "Egypt",
+                "city": "",
+                "address": ""
+            }
+        },
+        "professional_info": {
+            "current_job_title": "",
+            "company_organization_name": "",
+            "industry_field_of_work": "",
+            "years_of_experience": 0
+        },
+        "education_info": {
+            "highest_education_level": "",
+            "field_of_study": "",
+            "graduation_year": 2025,
+            "university_institution_name": ""
+        }
+    }
+}
+
+2- get user courses:
+- endpoint: {{url}}api/v1/user/my-courses
+- response json: {
+    "status": "success",
+    "code": 200,
+    "results": 5,
+    "data": [
+        {
+            "_id": "68a49d8e8bb04e7b6e286b61",
+            "course": {
+                "_id": "688e1e0238a830e6ec93144b",
+                "title": "AI Course",
+                "description": "Learn AI in classroom sessions",
+                "image": "https://i.postimg.cc/yDYFsXzq/A.jpg",
+                "course_type": [
+                    "Offline"
+                ],
+                "duration": 60
+            },
+            "selected_start_date": "2025-10-01T00:00:00.000Z",
+            "booking_status": "Confirmed",
+            "payment_status": "Partial",
+            "initial_payment_amount": 810,
+            "total_amount": 2700,
+            "createdAt": "2025-08-19T15:51:42.815Z"
+        }
+    ]
+}
+
+3- get user payments:
+- endpoint: {{url}}api/v1/user/payments
+- response json: {
+    "status": "success",
+    "code": 200,
+    "count": 5,
+    "data": [
+        {
+            "_id": "68a49d8e8bb04e7b6e286b61",
+            "image": "https://i.postimg.cc/yDYFsXzq/A.jpg",
+            "course_title": "AI Course",
+            "paid_amount": 810,
+            "payment_method": "Paymob",
+            "payment_type": "partial",
+            "payment_status": "partial",
+            "createdAt": "2025-08-19T15:51:42.815Z"
+        }
+    ]
+}
+
+4- get user certificates:
+- endpoint: {{url}}api/v1/user/my-certificates
+- response json: {
+    "status": "success",
+    "code": 200,
+    "count": 2,
+    "data": {
+        "certificates": [
+            {
+                "_id": "689aac10862c647b79551ecc",
+                "userInfo": {
+                    "_id": "688bd97b60ab83009df5e511",
+                    "first_name": "goda",
+                    "last_name": "goda"
+                },
+                "courseInfo": {
+                    "_id": "68602d46fb76b4cbe12ac339",
+                    "title": "Introduction to Node.js",
+                    "description": "Learn the basics of HTML, CSS, and JavaScript.",
+                    "image": "https://i.postimg.cc/yDYFsXzq/A.jpg",
+                    "duration": 30,
+                    "course_type": "Online",
+                    "selected_start_date": "2025-01-01T00:00:00.000Z"
+                }
+            },
+            {
+                "_id": "6891d7d752c5b6e44915a6c6",
+                "userInfo": {
+                    "_id": "688bd97b60ab83009df5e511",
+                    "first_name": "goda",
+                    "last_name": "goda"
+                },
+                "courseInfo": {
+                    "_id": "688cf4a7b2f07a25cce02e90",
+                    "title": "Advanced Web Development Course",
+                    "description": "Learn web development with the latest technologies",
+                    "image": "https://i.postimg.cc/yDYFsXzq/A.jpg",
+                    "duration": 40,
+                    "course_type": "Online",
+                    "selected_start_date": "2025-09-01T00:00:00.000Z"
+                }
+            }
+        ]
+    }
+}

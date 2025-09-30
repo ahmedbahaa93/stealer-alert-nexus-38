@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /api/auth/
+Disallow: /private/
+
+# Allow specific important pages
+Allow: /
+Allow: /about
+Allow: /courses
+Allow: /contact
+Allow: /blog
+Allow: /faqs
+
+# Sitemap location
+Sitemap: https://raiseup.com/sitemap.xml
+
+# Crawl delay (optional, adjust as needed)
+Crawl-delay: 1

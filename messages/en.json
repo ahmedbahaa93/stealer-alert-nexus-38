@@ -1,0 +1,1608 @@
+{
+  "location": {
+    "title": "Location Setup",
+    "description": "We need to know your location to provide accurate pricing and the best payment options for your region.",
+    "location_setup": "Location Setup",
+    "benefits": {
+      "title": "Benefits of sharing your location:",
+      "accurate_pricing": "Accurate pricing in your local currency",
+      "local_payment": "Local payment methods available",
+      "better_experience": "Better overall experience"
+    },
+    "privacy": {
+      "title": "Privacy & Security",
+      "description": "Your privacy is our priority. We use your location only to enhance your experience.",
+      "show_details": "Show details",
+      "hide_details": "Hide details",
+      "details": {
+        "no_storage": "Location data is not permanently stored",
+        "currency_only": "Only used for currency and payment method selection",
+        "no_sharing": "Never shared with third parties",
+        "secure_connection": "All data transmitted securely"
+      }
+    },
+    "allow_location": "Allow Location Access",
+    "manual_select": "Select Country Manually",
+    "skip": "Skip (Use Default: USD)",
+    "unavailable": "Location Not Available",
+    "detecting": "Detecting Your Location...",
+    "please_wait": "Please wait while we detect your location",
+    "browser_prompt": "Your browser may ask for location permission. Please allow access for the best experience.",
+    "success": "Location Detected Successfully!",
+    "error": "Location Detection Failed",
+    "retry": "Try Again",
+    "error_help": "Don't worry! You can manually select your country or skip this step.",
+    "select_country": "Select Your Country",
+    "select_country_description": "Choose your country to get accurate pricing and payment options.",
+    "back": "Back to Location Detection",
+    "currency": "Currency",
+    "payment_method": "Payment Method",
+    "rateLimitExceeded": "Too many location requests. Please try again later."
+  },
+  "HomePage": {
+    "title": "RaiseUp Learning Solutions – Take the Lead and Make the Future Happen Today",
+    "des": "RaiseUp Learning Solutions is a B2B and B2C training company specializing in IT, Networking & Cyber Security, Digital Arts, Business Training, Soft Skills, and Specialized Programs. With branches in Dubai (HQ), Riyadh, and Cairo, we deliver hands-on, internationally accredited programs that transform learners into confident professionals, ready for today's competitive job market.",
+    "list": {
+      "title": "Key Highlights",
+      "list": [
+        "Official Cisco NetAcad Training Partner",
+        "Expert Cisco-Certified Trainers",
+        "Practical, Lab-Based Learning",
+        "Internationally Accredited Certifications",
+        "Flexible Onsite & Online Options"
+      ]
+    },
+    "partners-logos": {
+      "eefe": "Education For Employment Egypt",
+      "maaden": "Maaden",
+      "mcit": "Ministry of Communications and Information Technology",
+      "mcit-sa": "Ministry of Communications and Information Technology of Saudi Arabia",
+      "mod": "Ministry of Defense",
+      "stc": "STC",
+      "tahakom": "Tahakom",
+      "tdh": "Terre des hommes"
+    },
+    "vendors": {
+      "cisco": "Cisco Learning Partner",
+      "microsoft": "Microsoft Cloud Training Services",
+      "aws": "AWS Partner Network",
+      "comptia": "CompTIA Authorized Partner",
+      "oracle": "Oracle Partner",
+      "eccouncil": "EC-Council Accredited Training Center",
+      "pecb": "PECB",
+      "isaca": "ISACA",
+      "atd": "Association for Talent Development",
+      "cipd": "CIPD",
+      "cips": "Chartered Institute of Procurement & Supply",
+      "ascm": "Association for Supply Chain Management"
+    },
+    "course-dis": "Our Best Selling Courses",
+    "more": "More Details",
+    "enroll": "Enroll",
+    "sale": "Sale",
+    "acquire": "Ways to acquire the course",
+    "success-partners": "Raiseup Success Partners",
+    "online": "Online",
+    "person": "In-person",
+    "rec": "Recorded",
+    "our": "Our Courses",
+    "success": "Success Metrics",
+    "achievementsHighlights": "Achievement Highlights",
+    "partners": "Our Partners",
+    "training-vendors": "Training Vendors",
+    "train": "10,000+ trainees",
+    "sub-train": "Number of students trained",
+    "company": "50+ companies",
+    "sup-company": "Number of partners",
+    "course-num": "+300 Course",
+    "sub-course": "Number of Courses",
+    "top-cat": "Top Categories",
+    "des-top": "Explore our Popular Categories",
+    "test": "Student Reviews",
+    "Home": {
+      "Testimonials": {
+        "error": {
+          "title": "Unable to load testimonials",
+          "message": "There was a problem loading the testimonials. Please try again later.",
+          "retry": "Try Again"
+        },
+        "empty": {
+          "title": "No testimonials yet",
+          "message": "Stay tuned! Reviews from our students will appear here soon.",
+          "leaveReview": "Leave a Review"
+        }
+      }
+    },
+    "testimonials": {
+      "noTestimonialsYet": "No Testimonials Yet",
+      "emptyMessage": "Be the first to share your learning experience with our community! Your feedback helps future students make informed decisions.",
+      "leaveReview": "Share Your Experience",
+      "errorTitle": "Unable to Load Testimonials",
+      "errorMessage": "We're having trouble loading student testimonials right now. Please try again in a moment.",
+      "retry": "Try Again"
+    },
+    "blog": {
+      "error": {
+        "title": "Unable to load blog content",
+        "message": "There was a problem loading the blog posts. Please try again later.",
+        "retry": "Try Again"
+      },
+      "empty": {
+        "title": "No blog posts yet",
+        "message": "Stay tuned! New blog posts will appear here soon."
+      }
+    },
+    "cat-card": [
+      {
+        "icon": "art",
+        "title": "Art & Design",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "dev",
+        "title": "Development",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "comunycate",
+        "title": "Communication",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "video",
+        "title": "Videography",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "record",
+        "title": "Photography",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "markiting",
+        "title": "Marketing",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "content",
+        "title": "Content writing",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "finance",
+        "title": "Finance",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "since",
+        "title": "Science",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "art",
+        "title": "Network",
+        "courseCount": "38 Courses"
+      }
+    ],
+    "radicals": "Our Trending Article",
+    "article-card": {
+      "date": "14 June 2023",
+      "comment": "Comment (06)",
+      "title": "How do you choose the right course for you?",
+      "message": "Define your goal: Know what you want to learn and why (skill development, promotion, change of field).Assess your current level: Determine whether you're a beginner or have experience and want to advance at a specific point.",
+      "action": "Learn More"
+    },
+    "errors": {
+      "our-courses-title": "Our Courses",
+      "network-error-title": "Connection Problem",
+      "network-error-message": "Unable to load courses. Please check your internet connection and try again.",
+      "general-error-title": "Something went wrong",
+      "general-error-message": "We couldn't load the courses at this time. Please try again in a moment.",
+      "retry-button": "Try Again",
+      "network-help": "Please ensure you have a stable internet connection.",
+      "top-categories-title": "Top Categories",
+      "top-categories-subtitle": "Explore our Popular Categories",
+      "categories-network-error-message": "Unable to load categories. Please check your internet connection and try again.",
+      "categories-general-error-message": "We couldn't load the categories at this time. Please try again in a moment."
+    },
+    "empty": {
+      "our-courses-title": "Our Courses",
+      "no-courses-title": "No Courses Available",
+      "no-courses-message": "We're working on adding new courses. Please check back soon for exciting learning opportunities!",
+      "browse-courses": "Browse All Courses",
+      "request-course": "Request a Course",
+      "check-back-message": "New courses are added regularly.",
+      "contact-support": "Contact our support team for assistance.",
+      "top-categories-title": "Top Categories",
+      "top-categories-subtitle": "Explore our Popular Categories",
+      "no-categories-title": "No Categories Available",
+      "no-categories-message": "We're working on organizing new categories. Please check back soon for exciting topics!",
+      "browse-categories": "Browse All Categories",
+      "suggest-category": "Suggest a Category",
+      "categories-check-back-message": "New categories are added regularly.",
+      "no-articles-title": "No Articles Yet",
+      "no-articles-message": "We're working on adding new articles. Check back soon for exciting content!",
+      "articles-check-back-message": "New articles are added regularly."
+    }
+  },
+  "Layout": {
+    "nav": {
+      "home": "Home",
+      "aboutUs": "About Us",
+      "courses": "Courses",
+      "contactUs": "Contact Us",
+      "faqs": "FAQ's",
+      "login": "Login",
+      "signUp": "Sign Up",
+      "logout": "Logout",
+      "mob-profile": "go to profile",
+      "search": "Search",
+      "notifications": "Notifications",
+      "profile": "Profile",
+      "blog": "Blog",
+      "menu": "Menu",
+      "openMenu": "Open Menu",
+      "closeMenu": "Close Menu",
+      "siteNavigation": "Site Navigation"
+    },
+    "blog": {
+      "title": "Our Blog",
+      "subtitle": "Explore our latest articles and insights",
+      "readMore": "Read More"
+    },
+    "footer": {
+      "identity": "RaiseUp the best educational consultant in the middleast",
+      "quick-link": {
+        "title": "Quick Links",
+        "home": "Home",
+        "courses": "Courses",
+        "aboutUs": "About Us",
+        "contactUs": "Contact Us"
+      },
+      "contact-us": {
+        "title": "Contact Us",
+        "address": "1901 Thornridge Cir. Shiloh, Hawaii 81063",
+        "email": "tim.jennings@example.com",
+        "number": "(406) 555-0120"
+      },
+      "course-category": {
+        "title": "Course Categories",
+        "development": "Development",
+        "data-science": "Data Science",
+        "AI": "AI",
+        "cybersecurity": "Cybersecurity",
+        "marketing": "Marketing",
+        "design": "Design"
+      },
+      "newsletter": {
+        "title": "Newsletter",
+        "description": "Stay updated! Subscribe to our newsletter for the latest courses and exclusive deals.",
+        "send": "send"
+      },
+      "under": {
+        "copy": "© 2025 All rights reserved RAISEUP Platform.",
+        "nav": {
+          "FAQ": "FAQ",
+          "terms": "Terms & Conditions",
+          "privacy": "Privacy Policy"
+        }
+      }
+    },
+    "bread-crumb": {
+      "title": "Homepage",
+      "terms": "Terms & Conditions",
+      "faqs": "FAQ's",
+      "about": "About Us",
+      "contact": "Contact Us",
+      "course": "Courses",
+      "profile": "profile",
+      "user-info": "Personal Info",
+      "my-course": "My Courses",
+      "certificates": "Certificates",
+      "pay": "Payments",
+      "settings": "Settings",
+      "blog": "Blog",
+      "categories": "Categories",
+      "course-details": "Course Details",
+      "payment": "Payment"
+    }
+  },
+  "terms-page": {
+    "title": "Terms & Conditions",
+    "description": "RAISEUP operates through its digital platform, offering training programs and courses accessible to learners globally. These Terms and Conditions apply universally to all training services provided via the official RAISEUP website and course listings.",
+    "list1": {
+      "title": "1. Payment Terms",
+      "content": [
+        "100% of the payment must be completed within 15 days upon receipt of the invoice.",
+        "Payments can be made by cash, credit/debit card, cheque, or bank transfer.",
+        "We accept online payments using VISA and MasterCard in AED (or other supported currencies).",
+        "If you make a payment through our website, your payment details will be securely processed via a trusted payment provider.",
+        "Prices displayed on the RAISEUP website do not include taxes, transfer fees, or withholding charges – such costs must be covered by the client where applicable.",
+        "Minors under 18 are not allowed to register, make payments, or use the platform.",
+        "Cardholders should retain copies of all transactions and abide by the merchant's policies and rules."
+      ]
+    },
+    "list2": {
+      "title": "2. Cancellation and Postponement Policy",
+      "content": {
+        "1st": "All cancellations or postponements must be submitted in written form.",
+        "2nd": "In case of cancellation or postponement by the client:",
+        "ul": [
+          "No cancellation fee if the request is made at least 14 days before the course start date.",
+          "Postponements made less than 14 days before the course start date will incur a 50% charge of the total course fee.",
+          "Cancellations made less than 14 days before the course start date will incur a 100% cancellation fee.",
+          "In these cases, a credit note may be issued for the full amount, valid for use within 12 months on any RAISEUP course."
+        ],
+        "3rd": "In case of cancellation or postponement by RAISEUP:",
+        "ul2": [
+          "A 100% refund will be issued or a credit note offered (valid for 12 months), based on the client's preference."
+        ]
+      }
+    },
+    "list3": {
+      "title": "3. Complaints and Refunds Procedure",
+      "1st": "a. RAISEUP recognizes the following as valid complaints:",
+      "ul": [
+        "Incorrect or unsuitable course content/materials.",
+        "Major discrepancies between advertised and actual course duration.",
+        "Misconduct by an instructor.",
+        "Poor training delivery."
+      ],
+      "2nd": "b. All complaints must be submitted in writing with sufficient detail",
+      "3rd": "c. Send complaints or inquiries to: support@raiseup.com",
+      "4th": "d. RAISEUP will respond within 7 days of receiving a complaint."
+    },
+    "list4": {
+      "title": "4. Trainer and Location Selection",
+      "1st": "The trainer and training location are selected at RAISEUP’s discretion.",
+      "2nd": "We aim for continuity, but RAISEUP reserves the right to change the trainer or location before the course starts if necessary."
+    },
+    "list5": {
+      "title": "5. Intellectual Property",
+      "1st": "All training materials, designs, and content are the intellectual property of RAISEUP or its instructors.",
+      "2nd": " No materials may be copied, shared, or reproduced without prior written consent."
+    },
+    "list6": {
+      "title": "6. Health and Safety",
+      "1st": "All participants must comply with the Health & Safety Policy of RAISEUP or the training venue if delivered on-site or through a partner location."
+    },
+    "list7": {
+      "title": "7. Force Majeure",
+      "1st": "RAISEUP shall not be liable for any failure or delay in service delivery due to events beyond its reasonable control, including but not limited to:",
+      "ul": [
+        "Natural disasters",
+        "Wars, pandemics, or terrorism",
+        "Governmental actions",
+        "Labor strikes",
+        "Internet or infrastructure failure"
+      ],
+      "2nd": "In such cases, RAISEUP will attempt to reschedule or provide an alternative. These disruptions will not be considered a breach, and no refund is guaranteed."
+    },
+    "footer": "These terms apply across all RAISEUP training services and are subject to the applicable laws in the countries where users or services are located."
+  },
+  "faqs-page": {
+    "title": "FAQ’S",
+    "description": "Got a question? Find quick answers to the most common ones here.",
+    "faqs": [
+      {
+        "title": "Q1: What programs does RaiseUp offer?",
+        "description": "RaiseUp provides a wide range of IT and Business training programs designed to develop both technical and professional skills. Our programs focus on career-oriented learning, combining practical training with internationally recognized certifications to prepare individuals and organizations for real-world success."
+      },
+      {
+        "title": "Q2: Are RaiseUp programs internationally recognized?",
+        "description": "Yes. RaiseUp is an Official Cisco NetAcad Partner, and our certifications are respected by employers worldwide."
+      },
+      {
+        "title": "Q3: Can I study online with RaiseUp?",
+        "description": "Absolutely! We provide onsite and live online programs, both including hands-on labs and guided practice."
+      },
+      {
+        "title": "Q4: Who can benefit from RaiseUp training?",
+        "description": "We serve students, graduates, job seekers, career shifters, professionals, freelancers, and corporate teams looking to enhance their skills."
+      },
+      {
+        "title": "Q5: Where are RaiseUp branches located?",
+        "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+      }
+    ]
+  },
+  "error-page": {
+    "title": "Oops!",
+    "sub-title": "Something went wrong",
+    "button": "Back To Home",
+    "link": "Back to Home"
+  },
+  "about-page": {
+    "title": "About Us",
+    "1st-section": {
+      "title": "About RaiseUp Learning Solutions",
+      "description": "At RaiseUp Learning Solutions, we go beyond traditional training. We specialize in career transformation by combining expert-led instruction, immersive labs, and international accreditation."
+    },
+    "2nd-section": {
+      "title": "Our Training Fields",
+      "list": [
+        {
+          "title": "Information Technology (IT)",
+          "items": [
+            "Development",
+            "Networking & Cyber Security",
+            "Digital Arts",
+            "IT Management"
+          ]
+        },
+        {
+          "title": "Business Training"
+        },
+        {
+          "title": "Soft Skills",
+          "items": ["General & Specialized"]
+        },
+        {
+          "title": "Specialized Professional Programs"
+        }
+      ]
+    },
+    "3rd-section": {
+      "title": "Our Promise",
+      "items": [
+        "Practical, hands-on training for real-world careers",
+        "Internationally recognized certifications to boost employability",
+        "State-of-the-art labs and simulation tools for job-ready skills",
+        "Flexible onsite and online learning options"
+      ],
+      "conclusion": "With RaiseUp, you're not just attending a course—you're building a career."
+    },
+    "4th-section": {
+      "title": "Global Presence",
+      "cards": [
+        {
+          "title": "EGYPT",
+          "address": "RaiseUp Learning Solutions, El-Nasr Rd, As Sarayat Ash Sharqeyah, Qesm Than Madinet Nasr, Cairo Governorate 4450233",
+          "code": "eg"
+        },
+        {
+          "title": "Saudi Arabia",
+          "address": "RaiseUp Learning Solutions, Riyadh Branch, KSA",
+          "code": "ksa"
+        },
+        {
+          "title": "UAE",
+          "address": "RaiseUp Learning Solutions, Dubai Headquarters, UAE",
+          "code": "uae"
+        }
+      ],
+      "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+    },
+    "5th-section": {
+      "title": "Certifications & Partnerships",
+      "description": "We are proud to be certified by leading institutions and to partner with top organizations in the education and technology sectors. These collaborations help us deliver high-quality learning experiences you can trust."
+    }
+  },
+  "contact-page": {
+    "title": "Contact Us",
+    "description": "We're here to help! Reach out and we'll get back to you soon.",
+    "form": {
+      "select": {
+        "title": "Choose Your Country ",
+        "option": [
+          {
+            "title": "EGYPT",
+            "code": "eg"
+          },
+          {
+            "title": "Saudi Arabia",
+            "code": "ksa"
+          },
+          {
+            "title": "UAE",
+            "code": "uae"
+          }
+        ]
+      },
+      "form": {
+        "title": "Send Message",
+        "send": "Send",
+        "sending": "Sending...",
+        "fields": {
+          "inputs": [
+            {
+              "label": "Name",
+              "place-holder": "Enter Your Name",
+              "error": "Name is required"
+            },
+            {
+              "label": "Email",
+              "place-holder": "Enter Your Email",
+              "error": "Email is required",
+              "invalid": "Invalid email address"
+            }
+          ],
+          "select": {
+            "title": "Subject",
+            "place-holder": "Enter Subject",
+            "option": [
+              "General Inquiry",
+              "Course Information",
+              "Technical Support"
+            ],
+            "error": "Subject is required"
+          },
+          "radio": ["For business", "For individual"],
+          "radio_error": "Please select a type",
+          "country": {
+            "error": "Please select a country",
+            "label": "Country",
+            "place-holder": "Select your country"
+          },
+          "text-area": {
+            "label": "Message",
+            "place-holder": "Type here ...",
+            "error": "Message is required"
+          }
+        },
+        "validation": {
+          "name": {
+            "min": "Name must be at least 2 characters",
+            "max": "Name must not exceed 50 characters",
+            "invalid": "Name can only contain letters and spaces"
+          },
+          "email": {
+            "max": "Email must not exceed 100 characters"
+          },
+          "subject": {
+            "min": "Subject must be at least 3 characters",
+            "max": "Subject must not exceed 100 characters"
+          },
+          "type": {
+            "invalid": "Please select a valid type"
+          },
+          "message": {
+            "min": "Message must be at least 10 characters",
+            "max": "Message must not exceed 1000 characters"
+          }
+        },
+        "notifications": {
+          "success": "Your message has been sent successfully! We'll get back to you soon.",
+          "sending": "Sending your message...",
+          "errors": {
+            "general": "Something went wrong. Please try again.",
+            "network": "Network error. Please check your connection and try again.",
+            "timeout": "Request timed out. Please try again.",
+            "rateLimit": "Too many requests. Please wait a moment and try again."
+          },
+          "errorCode": "Error Code",
+          "retrySuggestion": "Please check your internet connection and try again."
+        }
+      }
+    },
+    "contact-info": {
+      "title": "Contact Information",
+      "cards": [
+        {
+          "icon": "email",
+          "title": "Email",
+          "data": "Contact@raiseuplearn.com"
+        },
+        {
+          "icon": "website",
+          "title": "Website",
+          "data": "www.raiseuplearn.com"
+        },
+        {
+          "icon": "phone",
+          "title": "Start your career transformation today",
+          "data": "Contact RaiseUp!"
+        }
+      ],
+      "branches": {
+        "title": "Other Branches",
+        "list": [
+          {
+            "location": "Dubai, UAE",
+            "type": "Headquarters"
+          },
+          {
+            "location": "Riyadh, KSA",
+            "type": "Branch"
+          }
+        ]
+      },
+      "map": {
+        "title": "Our Locations",
+        "icon": "map",
+        "url": "/assets/contact/map.svg"
+      }
+    }
+  },
+  "course-page": {
+    "title": "Courses",
+    "description": "Discover courses that match your passion and pace.",
+    "header": "All courses",
+    "place-holder": "Search",
+    "enroll": "Enroll Now",
+    "details": "Course Details",
+    "filter": "filter",
+    "close": "close",
+    "error": {
+      "title": "Unable to Load Courses",
+      "general": "There was a problem loading the courses. Please try again later.",
+      "network": "Please check your internet connection and try again.",
+      "retry": "Try Again",
+      "retrying": "Retrying..."
+    },
+    "empty": {
+      "general": {
+        "title": "No Courses Available",
+        "message": "We're working on adding new courses. Check back soon!"
+      },
+      "search": {
+        "title": "No Results Found",
+        "message": "No courses found for \"{searchTerm}\". Try adjusting your search terms.",
+        "clear": "Clear Search"
+      },
+      "filtered": {
+        "message": "No courses match your current filters. Try adjusting your criteria.",
+        "clear": "Clear Filters"
+      }
+    },
+    "filters": {
+      "clear": "Clear Filter",
+      "state": {
+        "title": "Course Type",
+        "options": [
+          {
+            "text": "All",
+            "href": "all"
+          },
+          {
+            "text": "Online",
+            "href": "online"
+          },
+          {
+            "text": "Offline",
+            "href": "offline"
+          },
+          {
+            "text": "Recorded",
+            "href": "recorded"
+          }
+        ]
+      },
+      "country": {
+        "title": "Country",
+        "options": [
+          {
+            "text": "EGYPT",
+            "href": "eg"
+          },
+          {
+            "text": "UAE",
+            "href": "uae"
+          },
+          {
+            "text": "Saudi Arabia",
+            "href": "sa"
+          }
+        ]
+      },
+      "Category": {
+        "title": "Category",
+        "options": [
+          {
+            "text": "Web Development",
+            "href": "web-dev"
+          },
+          {
+            "text": "Mobile App Development",
+            "href": "mobile-dev"
+          },
+          {
+            "text": "Software Engineering",
+            "href": "software-eng"
+          },
+          {
+            "text": "Frontend Development",
+            "href": "frontend"
+          },
+          {
+            "text": "Backend Development",
+            "href": "backend"
+          },
+          {
+            "text": "Data Analysis",
+            "href": "data-analysis"
+          },
+          {
+            "text": "Big Data",
+            "href": "big-data"
+          },
+          {
+            "text": "SQL & Databases",
+            "href": "databases"
+          },
+          {
+            "text": "Network Security",
+            "href": "network-sec"
+          },
+          {
+            "text": "Information Security",
+            "href": "info-sec"
+          },
+          {
+            "text": "Cybersecurity for Beginners",
+            "href": "cyber-basics"
+          },
+          {
+            "text": "Security Compliance & Governance",
+            "href": "security-gov"
+          },
+          {
+            "text": "Digital Marketing",
+            "href": "digital-marketing"
+          },
+          {
+            "text": "Social Media Marketing",
+            "href": "social-marketing"
+          },
+          {
+            "text": "SEO (Search Engine Optimization)",
+            "href": "seo"
+          },
+          {
+            "text": "Marketing Analytics",
+            "href": "marketing-analytics"
+          },
+          {
+            "text": "Content Marketing",
+            "href": "content-marketing"
+          },
+          {
+            "text": "Graphic Design",
+            "href": "graphic-design"
+          },
+          {
+            "text": "UI/UX Design",
+            "href": "ui-ux"
+          },
+          {
+            "text": "Web Design",
+            "href": "web-design"
+          },
+          {
+            "text": "Motion Graphics",
+            "href": "motion-graphics"
+          },
+          {
+            "text": "3D Design",
+            "href": "3d-design"
+          },
+          {
+            "text": "Introduction to AI",
+            "href": "ai-intro"
+          },
+          {
+            "text": "Deep Learning",
+            "href": "deep-learning"
+          },
+          {
+            "text": "Natural Language Processing (NLP)",
+            "href": "nlp"
+          },
+          {
+            "text": "Computer Vision",
+            "href": "computer-vision"
+          },
+          {
+            "text": "AI for Business",
+            "href": "ai-business"
+          }
+        ]
+      },
+      "price": "Price",
+      "priceRange": {
+        "min": "Min",
+        "max": "Max",
+        "minLabel": "Minimum price",
+        "maxLabel": "Maximum price",
+        "clear": "Clear price filter"
+      },
+      "sort": {
+        "label": "Sort",
+        "default": "Default",
+        "price-low": "Price: Low to High",
+        "price-high": "Price: High to Low",
+        "title-az": "Title: A-Z",
+        "title-za": "Title: Z-A",
+        "duration-short": "Duration: Short to Long",
+        "duration-long": "Duration: Long to Short"
+      }
+    },
+    "pagination": {
+      "showing": "Showing",
+      "to": "to",
+      "of": "of",
+      "courses": "courses",
+      "page": "Page",
+      "itemsPerPage": "Items per page",
+      "previous": "Previous",
+      "next": "Next",
+      "jumpToPage": "Jump to page"
+    }
+  },
+  "user-nav": {
+    "Profile": "Profile",
+    "Personal": "Personal Info",
+    "Courses": "My Courses",
+    "Certificates": "Certificates",
+    "Payment": "Payment History",
+    "Settings": "Settings",
+    "edit": "Edit Profile"
+  },
+  "profile": {
+    "courses": "My Courses",
+    "certificates": "Certificates",
+    "payment": "Payment History",
+    "loading": "Loading...",
+    "noCourses": "You haven't enrolled in any courses yet.",
+    "noCertificates": "You haven't earned any certificates yet.",
+    "noPayments": "You haven't made any payments yet.",
+    "editProfile": "Edit Profile",
+    "days": "days",
+    "progress": "Progress"
+  },
+  "ErrorStates": {
+    "title": "Internal server error",
+    "defaultMessage": "We encountered an issue while loading this content. Please try again.",
+    "retry": "Try Again",
+    "browseCourses": "Browse Courses"
+  },
+  "ProfileErrorStates": {
+    "title": "Something went wrong",
+    "defaultMessage": "We encountered an issue while fetching your data. Please try again.",
+    "retry": "Try Again",
+    "networkError": "Network connection issue. Please check your internet connection.",
+    "serverError": "Server error occurred. Please try again later.",
+    "authError": "Authentication error. Please sign in again."
+  },
+  "user-info": {
+    "title": "Basic Information:",
+    "first": "First Name",
+    "last": "Last Name",
+    "email": "email",
+    "gender": "Gender",
+    "num": "Phone Number",
+    "date": "Date of Birth",
+    "title-2": "Location Details:",
+    "country": "Country",
+    "city": "City",
+    "address": "Address",
+    "title-3": "Professional  Info:",
+    "job": "Current Job Title",
+    "company": "Company / Organization Name",
+    "field": "Industry / Field of Work",
+    "yrs": "Years of Experience (Optional)",
+    "title-4": "Educational Info:",
+    "edu": "Highest Education Level",
+    "study": "Field of Study",
+    "graduation": "Graduation Year",
+    "unv": "University / Institution Name"
+  },
+  "my-courses": {
+    "complete": "Completed Courses",
+    "progress": "In Progress",
+    "courses": "My Courses",
+    "continue": "Continue",
+    "viewCertificate": "View Certificate",
+    "courseProgress": "Course Progress",
+    "courseCompleted": "Course Completed",
+    "count": "Continue",
+    "view": "View Certificate",
+    "continueLearning": "Continue Learning",
+    "noCourses": "You haven't enrolled in any courses yet",
+    "noCoursesMessage": "When you enroll in courses, they will appear here. Start exploring our courses and begin your learning journey!",
+    "browseCourses": "Browse Available Courses",
+    "noCompletedCourses": "You haven't completed any courses yet",
+    "noInProgressCourses": "You don't have any courses in progress"
+  },
+  "prof-cert": {
+    "title": "My Certificates",
+    "view": "View Certificate",
+    "noCertificates": "No certificates yet",
+    "noCertificatesMessage": "You haven't earned any certificates yet. Complete your courses to earn certificates!",
+    "certificateDetails": "Certificate Details",
+    "certificateDescription": "View your course completion certificate details",
+    "courseInfo": "Course Information",
+    "courseName": "Course Name",
+    "duration": "Duration",
+    "hours": "hours",
+    "courseType": "Course Type",
+    "startDate": "Start Date",
+    "courseDescription": "Description",
+    "certificateInfo": "Certificate Information",
+    "issuedTo": "Issued To",
+    "issueDate": "Issue Date",
+    "certificateId": "Certificate ID"
+  },
+  "payment": {
+    "title": "Payment History",
+    "place-holder": "Filter By",
+    "allPayments": "All Payments",
+    "noPayments": "No Payment History",
+    "noPaymentsDescription": "You haven't made any payments yet. Enroll in a course to start your learning journey!",
+    "noFilteredPayments": "No Matching Payments",
+    "noFilteredPaymentsDescription": "No payments match your current filter. Try selecting a different payment method.",
+    "stripe": "Stripe",
+    "paymob": "Paymob",
+    "cash": "Cash",
+    "payment": "Payment",
+    "course": "Course",
+    "courseBooking": "Course booking",
+    "courseDetails": "Course details",
+    "creditCard": "Credit Card",
+    "instapay": "Instapay",
+    "instapayIntegration": "Instapay integration would be implemented here",
+    "paymentSuccess": "Payment successful!",
+    "paymentFailed": "Payment failed. Please check your connection and try again."
+  },
+  "payment-form": {
+    "title": "Payment",
+    "course-details": "Course Details",
+    "steps": {
+      "course": "Course",
+      "booking": "Course booking",
+      "payment": "Payment"
+    },
+    "methods": {
+      "credit-card": "Credit Card",
+      "instapay": "Instapay"
+    },
+    "fields": {
+      "cardholderName": "Cardholder Name",
+      "cardNumber": "Card Number",
+      "expiryDate": "Expire Date",
+      "cvv": "CVV",
+      "country": "Your Country",
+      "startDate": "Start Date",
+      "saveCard": "Save this card for future purchase",
+      "agreeTerms": "I agree to the Terms&conditions and Privacy Policy"
+    },
+    "placeholders": {
+      "cardholderName": "Enter cardholder name",
+      "cardNumber": "0000-0000-0000-0000",
+      "expiryDate": "MM/YY",
+      "cvv": "***",
+      "country": "Select Country",
+      "startDate": "Select start date"
+    },
+    "buttons": {
+      "pay": "Pay",
+      "cancel": "Cancel",
+      "processing": "Processing...",
+      "retry": "Try Again"
+    },
+    "security": "Your Payment is protected with 256 bit SSL encryption",
+    "errors": {
+      "cardholderName": {
+        "required": "Cardholder name is required",
+        "min": "Name must be at least 2 characters",
+        "max": "Name must not exceed 50 characters",
+        "invalid": "Only letters and spaces are allowed"
+      },
+      "cardNumber": {
+        "required": "Card number is required",
+        "invalid": "Please enter a valid card number"
+      },
+      "expiryDate": {
+        "required": "Expiry date is required",
+        "invalid": "Please enter a valid expiry date (MM/YY)",
+        "expired": "Card has expired"
+      },
+      "cvv": {
+        "required": "CVV is required",
+        "invalid": "Please enter a valid CVV"
+      },
+      "country": {
+        "required": "Please select your country"
+      },
+      "startDate": {
+        "required": "Please select a start date"
+      },
+      "paymentMethod": {
+        "required": "Please select a payment method",
+        "invalid": "Invalid payment method selected"
+      },
+      "agreeTerms": {
+        "required": "You must agree to the terms and conditions"
+      },
+      "general": "Payment failed. Please try again.",
+      "network": "Network error. Please check your connection.",
+      "timeout": "Payment timeout. Please try again.",
+      "card": "Invalid card details. Please check and try again."
+    },
+    "success": {
+      "title": "Payment Successful!",
+      "message": "Your enrollment has been confirmed. You will receive an email with course details shortly.",
+      "button": "View My Courses"
+    },
+    "loading": {
+      "course": "Loading course details...",
+      "processing": "Processing payment...",
+      "redirect": "Redirecting to payment gateway..."
+    },
+    "course": {
+      "price": "Price",
+      "discount": "Discount",
+      "total": "Total",
+      "duration": "Duration",
+      "hours": "hours",
+      "type": "Course Type",
+      "startDates": "Available Start Dates",
+      "slotsAvailable": "slots available",
+      "error": "Failed to load course details"
+    }
+  },
+  "settings": {
+    "pass": {
+      "title": "Change Password",
+      "current_password": {
+        "label": "Current Password",
+        "placeholder": "Enter your current password",
+        "error": "Current password is incorrect or required"
+      },
+      "new_password": {
+        "label": "New Password",
+        "placeholder": "Enter your new password",
+        "error": "New password is required"
+      },
+      "confirm_new_password": {
+        "label": "Confirm New Password",
+        "placeholder": "Confirm your new password",
+        "error": "Confirm new password is required"
+      },
+      "password_mismatch": "New password and confirm password do not match",
+      "validation": {
+        "minLength": "Password must be at least 8 characters long",
+        "complexity": "Password must include uppercase, lowercase, number and special character"
+      },
+      "change_password_button": "Change Password",
+      "api": {
+        "success": "Password changed successfully",
+        "error": "Failed to change password",
+        "changing": "Changing password..."
+      }
+    },
+    "lang": {
+      "title": "Language Preference"
+    },
+    "delete": {
+      "title": "Delete My Account",
+      "des": "Deleting your account is permanent and cannot be undone. Are you sure?",
+      "action": "Delete My Account",
+      "head": "Are you absolutely sure?",
+      "sub": "Are you sure you want to delete your account?",
+      "password": {
+        "label": "Password",
+        "placeholder": "Enter your password to confirm",
+        "error": "Password is required"
+      },
+      "confirm": "Delete",
+      "cancel": "Cancel",
+      "api": {
+        "success": "Account deleted successfully",
+        "error": "Failed to delete account",
+        "deleting": "Deleting account..."
+      }
+    }
+  },
+  "SignUp": {
+    "title": "Register With Your Account",
+    "subtitle": "Join our learning platform and start your journey",
+    "form": {
+      "firstNameArabic": {
+        "label": "Enter First Name as Arabic",
+        "placeholder": "أدخل الاسم الأول باللغة العربية"
+      },
+      "lastNameArabic": {
+        "label": "Enter Last Name as Arabic",
+        "placeholder": "أدخل اسم العائلة باللغة العربية"
+      },
+      "firstNameEnglish": {
+        "label": "First Name",
+        "placeholder": "Enter your First Name"
+      },
+      "lastNameEnglish": {
+        "label": "Last Name",
+        "placeholder": "Enter your Last Name"
+      },
+      "firstName": {
+        "label": "First Name",
+        "placeholder": "Enter your first name"
+      },
+      "lastName": {
+        "label": "Last Name",
+        "placeholder": "Enter your last name"
+      },
+      "email": {
+        "label": "Enter Your Email",
+        "placeholder": "example@gmail.com"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "1234567890"
+      },
+      "dateOfBirth": {
+        "label": "Date Of Birth"
+      },
+      "gender": {
+        "label": "Gender",
+        "male": "Male",
+        "female": "Female"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Select your country",
+        "options": {
+          "egypt": "Egypt",
+          "saudi": "Saudi Arabia",
+          "uae": "UAE"
+        }
+      },
+      "password": {
+        "label": "Enter Your Password",
+        "placeholder": "Enter your password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "placeholder": "Confirm your password"
+      },
+      "acceptTerms": "I agree to the Terms of Service and Privacy Policy",
+      "marketingEmails": "I want to receive marketing emails and updates"
+    },
+    "buttons": {
+      "signUp": "Register",
+      "signUpWithGoogle": "Sign up with Google",
+      "signUpWithApple": "Sign up with Apple"
+    },
+    "messages": {
+      "alreadyHaveAccount": "Already have an account?",
+      "loginHere": "Log in here",
+      "orSignUpWith": "Or Register with",
+      "or": "OR",
+      "success": "Account created successfully!",
+      "error": "Something went wrong. Please try again.",
+      "passwordMismatch": "Passwords do not match",
+      "weakPassword": "Password must be at least 8 characters",
+      "invalidEmail": "Please enter a valid email address",
+      "termsRequired": "You must accept the terms and conditions"
+    },
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "arabicNameRequired": "Please enter name in Arabic characters only",
+      "englishNameRequired": "Please enter name in English characters only",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number (10-15 digits)",
+      "dateOfBirthRequired": "Date of birth is required",
+      "genderRequired": "Gender is required",
+      "countryRequired": "Country is required",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 6 characters",
+      "passwordComplexity": "Password must contain a lowercase letter, an uppercase letter, and a special character (@!#$%^&*)",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordsMatch": "Passwords must match",
+      "termsAccepted": "Please accept the terms and conditions"
+    }
+  },
+  "Login": {
+    "title": "Login With Your Account",
+    "subtitle": "Welcome back to our learning platform",
+    "form": {
+      "email": {
+        "label": "Enter Your Email",
+        "placeholder": "Enter your email"
+      },
+      "password": {
+        "label": "Enter Your Password",
+        "placeholder": "Enter your password"
+      },
+      "rememberMe": "Remember me",
+      "forgotPassword": "Forgot Password?"
+    },
+    "buttons": {
+      "login": "Login",
+      "loginWithGoogle": "Login with Google",
+      "loginWithApple": "Login with Apple",
+      "forgotPassword": "Forget Password?"
+    },
+    "messages": {
+      "dontHaveAccount": "Don't have an account yet?",
+      "noAccount": "Don't have an account?",
+      "registerHere": "Register",
+      "loginWith": "Login With",
+      "or": "OR",
+      "success": "Login successful!",
+      "error": "Invalid email or password"
+    },
+    "validation": {
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters"
+    }
+  },
+  "OTP": {
+    "buttons": {
+      "back": "Back",
+      "verify": "Verify Code",
+      "verifying": "Verifying...",
+      "resend": "Resend Code",
+      "sending": "Sending..."
+    },
+    "labels": {
+      "enterCode": "Enter Verification Code"
+    },
+    "messages": {
+      "sentTo": "Sent to:",
+      "didntReceive": "Didn't receive the code?",
+      "resendIn": "Resend available in",
+      "codeSent": "Verification code sent successfully!",
+      "resendFailed": "Failed to resend verification code"
+    },
+    "validation": {
+      "incompleteOTP": "Please enter a valid 4-digit OTP code"
+    },
+    "titles": {
+      "verifyLogin": "Verify Your Login",
+      "verifyEmail": "Verify Your Email"
+    },
+    "descriptions": {
+      "verifyLoginDesc": "We've sent a verification code to your email address. Please enter it below to complete your login.",
+      "verifyEmailDesc": "We've sent a verification code to your email address. Please enter it below to complete your signup."
+    }
+  },
+  "Errors": {
+    "title": "Something went wrong",
+    "general": "An unexpected error occurred. Please try again later.",
+    "network": "Unable to connect to the server. Please check your internet connection and try again.",
+    "server": "Server is temporarily unavailable. Please try again in a few moments.",
+    "retry": "Try Again"
+  },
+  "EmptyStates": {
+    "noDiscountedCourses": {
+      "title": "No Discounted Courses Available",
+      "description": "There are currently no courses with discounts available. Please check back later for new offers!"
+    }
+  },
+  "RequestCallBack": {
+    "title": "Request a Call Back",
+    "description": "Need help choosing the right course? Leave your details and one of our advisors will contact you shortly.",
+    "form": {
+      "fullName": {
+        "label": "Your Name",
+        "placeholder": "Enter your full name",
+        "required": "*"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Enter your email address",
+        "required": "*"
+      },
+      "phone": {
+        "label": "Phone Number",
+        "placeholder": "Enter your phone number",
+        "required": "*"
+      },
+      "department": {
+        "label": "Department",
+        "placeholder": "Select department",
+        "options": {
+          "hr": "Human Resource",
+          "management": "Management",
+          "it": "Information Technology",
+          "marketing": "Marketing",
+          "sales": "Sales",
+          "finance": "Finance"
+        }
+      },
+      "submit": "Send",
+      "submitting": "Sending..."
+    },
+    "validation": {
+      "fullNameRequired": "Full name is required",
+      "emailRequired": "Email is required",
+      "emailInvalid": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "phoneInvalid": "Please enter a valid phone number",
+      "departmentRequired": "Please select a department"
+    },
+    "success": {
+      "title": "Request Sent Successfully!",
+      "message": "Thank you for your request. One of our advisors will contact you shortly."
+    },
+    "error": {
+      "network": {
+        "title": "Connection Problem",
+        "message": "Unable to send your request. Please check your internet connection and try again.",
+        "retry": "Try Again"
+      },
+      "general": {
+        "title": "Something went wrong",
+        "message": "We couldn't send your request at this time. Please try again in a moment.",
+        "retry": "Try Again"
+      }
+    }
+  },
+  "courseDetail": {
+    "learnMore": "Learn More",
+    "responsive": "Responsive Design",
+    "courseDescription": "Course Description",
+    "courseContent": "Course Content",
+    "certification": "Certification After Completion of the Course",
+    "waysToAttend": "Ways to attend the course",
+    "errorTitle": "Error Loading Course",
+    "errorMessage": "We couldn't load the course details at this time. Please try again in a moment.",
+    "retry": "Try Again",
+    "courseNotFound": "Course Not Found",
+    "courseNotFoundMessage": "The course you are looking for doesn't exist or has been removed.",
+    "browseCourses": "Browse Courses",
+    "relatedCourses": "Related courses you can also join",
+    "enrollNow": "Enroll Now",
+    "subscribeNow": "Subscribe Now",
+    "moreDetails": "Details",
+    "price": "Price",
+    "whatsIncluded": "What's Included",
+    "projects": "Projects",
+    "certificateOfCompletion": "Certificate of completion",
+    "quizzes": "Quizzes",
+    "online": "Online",
+    "inPerson": "In Person",
+    "recorded": "Recorded",
+    "chooseCourseMethod": "If you would like to join us, please choose how to attend the course.",
+    "availableStartDates": "Available Start Dates:",
+    "slotsAvailable": "slots available",
+    "initialPayment": "Initial payment: {percentage}% of total cost"
+  },
+  "Categories": {
+    "errors": {
+      "errorTitle": "Error Loading Courses",
+      "errorMessage": "We couldn't load the courses at this time. Please try again in a moment.",
+      "retry": "Try Again",
+      "subCategoriesError": "Unable to load subcategories",
+      "coursesError": "Unable to load courses for this subcategory",
+      "browseCourses": "Browse All Courses"
+    },
+    "header": {
+      "title": "Categories",
+      "subtitle": "Various courses suitable for everyone to learn new skills and achieve your ambitions quickly and effectively."
+    },
+    "empty": {
+      "emptyTitle": "No Courses Found",
+      "emptyMessage": "There are no courses available in this category at the moment.",
+      "browseMoreCourses": "Browse Other Categories",
+      "noSubCategories": "No subcategories found",
+      "noCourses": "No courses found in this subcategory"
+    },
+    "loading": {
+      "loadingSubCategories": "Loading subcategories...",
+      "loadingCourses": "Loading courses..."
+    },
+    "actions": {
+      "selectSubCategory": "Select",
+      "moreDetails": "Details",
+      "enrollNow": "Enroll Now",
+      "chooseMajor": "Choose Your Major"
+    },
+    "courseCard": {
+      "components": "Its Components:",
+      "frameworks": "Frame works:",
+      "instructor": "The course is taught by the best trainers. He is an."
+    },
+    "courseGrid": {
+      "title": "Professional Courses",
+      "subtitle": "Choose from our professional courses designed to help you master new skills",
+      "hours": "Hours",
+      "cost": "Cost",
+      "content": "Content",
+      "frameworks": "Frameworks",
+      "courseType": "Course Type",
+      "enrollNow": "Enroll Now",
+      "viewDetails": "View Details"
+    }
+  },
+  "PolicyPage": {
+    "title": "Privacy Policy",
+    "subtitle": "RAISEUP provides its training programs through a digital platform, requiring users to share certain personal information. This Privacy Policy explains how such data is collected, used, and protected when accessing services via our official website.",
+    "sections": {
+      "information": {
+        "title": "1.Information We Collect:",
+        "subtitle": "Contact us",
+        "description": "When you register for RAISEUP services or interact with our platform, we may collect personal information including:",
+        "list": [
+          "Name and contact details",
+          "Email address",
+          "Phone number",
+          "Educational background",
+          "Professional experience",
+          "Payment information (processed securely)",
+          "Learning preferences and progress data"
+        ],
+        "additional": "We may also collect technical information such as device type, browser type, IP address, and usage statistics to improve our platform's performance and user experience."
+      },
+      "usage": {
+        "title": "2.How We Use Your Information:",
+        "list": [
+          "Provide access to our training programs and manage your progress",
+          "Communicate with you about courses, updates, and promotional content",
+          "Customize your learning experience and provide personalized recommendations",
+          "Process payments and issue certificates upon completion",
+          "Improve our services and develop new educational content",
+          "Comply with legal obligations and protect against misuse"
+        ]
+      },
+      "sharing": {
+        "title": "3.Sharing Your Information:",
+        "description": "We do not sell, trade, or rent your personal information to third parties. However, we may share your data with trusted service providers who assist us in operating our platform, such as:",
+        "list": [
+          "Payment processors",
+          "Cloud hosting and technical support services",
+          "Email and communication services",
+          "Analytics and marketing platforms",
+          "Certification and credentialing partners"
+        ],
+        "additional": "These partners are contractually bound to protect your data and use it only for the purposes we specify. We may also disclose your information if required by law or to protect our rights and the safety of our users."
+      },
+      "rights": {
+        "title": "4.Your Rights:",
+        "description": "As a user of RAISEUP, you have the following rights regarding your personal data:",
+        "list": [
+          "The right to access the personal information we hold about you",
+          "The right to request correction of inaccurate or incomplete data",
+          "The right to request deletion of your data, subject to legal and contractual obligations",
+          "The right to object to or restrict processing of your personal information",
+          "The right to data portability (receiving your data in a structured format)",
+          "The right to withdraw consent for marketing communications",
+          "The right to lodge a complaint with a supervisory authority"
+        ],
+        "additional": "To exercise any of these rights, such as data portability, please contact us using the information provided below."
+      },
+      "contact": {
+        "title": "5.Contact Us:",
+        "contactTitle": "Contact Us:",
+        "description": "If you have any questions, concerns, or requests related to this Privacy Policy or your personal data, please contact our support team. We are committed to addressing your inquiries promptly and transparently.",
+        "email": "support@raiseup.com"
+      }
+    },
+    "consent": {
+      "title": "By continuing, you agree to our Privacy Policy.",
+      "checkbox": "I agree to the Privacy Policy and Terms of Use."
+    },
+    "buttons": {
+      "continue": "Continue"
+    }
+  },
+  "SuccessPage": {
+    "title": "Congratulations!",
+    "subtitle": "Action completed successfully",
+    "courseMessage": "Your course enrollment has been confirmed",
+    "dynamicCourseMessage": "You are now enrolled in the '{courseName}' course",
+    "buttons": {
+      "back": "Back Home",
+      "viewCourse": "View Course",
+      "continue": "Continue"
+    }
+  },
+  "FailedPage": {
+    "title": "Oops!",
+    "subtitle": "Something went wrong",
+    "message": "We couldn't complete your request. Please try again.",
+    "buttons": {
+      "back": "Back Home",
+      "tryAgain": "Try Again"
+    }
+  },
+  "Blog": {
+    "title": "Our Blog",
+    "subtitle": "Insights and updates from our team",
+    "sections": {
+      "firstSection": {
+        "title": "Remote Work Research",
+        "content": "Remote working might not only be feasible but beneficial. Stanford University found that remote employees were 13% more productive, with absolutely \"no difference in the effectiveness, performance ratings, or promotions\"."
+      },
+      "secondSection": {
+        "title": "Understanding Remote Work",
+        "content": "Introduction\nRemote work is a flexible work style where you work outside a traditional office environment. It comes in many forms depending on a company's size, stage, and philosophy.\nAt one extreme, employees may work from home occasionally. At the other end of the spectrum, fully remote employees stop commuting entirely and work whenever and wherever they're most productive.\nThis article outlines how and why people work remotely, how to find a remote job, common misconceptions about remote work and the different types of remote companies.",
+        "faq1": "What is remote work?",
+        "faq2": "Benefits of remote work",
+        "faq3": "Challenges of remote work",
+        "weekly_newsletter": "Weekly Newsletter",
+        "newsletter_description": "Stay updated with our latest articles and remote work tips.",
+        "email_placeholder": "Your email address",
+        "subscribe": "Subscribe",
+        "author_name": "Rahma Ali",
+        "published_date": "Published 25 March, 2025",
+        "introduction": "Introduction"
+      },
+      "thirdSection": {
+        "title": "Common Issues in Remote Work",
+        "content": "There is some bugs:\n1- navbar logo image works only with home page put it is not works with other pages and you use different logo, you must use same logo with all pages\n\n2- hero section in home page text direction in ar mode is incorrect, you must make text direction of hero section in ar mode from right to left\n\n3- top categories cards title UI is not clean and if title is many it go out it's parent container , you must handle this issues with make overflow hidden and title text cut if it is have many characters\n\n4- there is UI bug issues in courses page:\ncourses cards has different card height and different image height, you must fix this issue and make all cards images have same fixed height and all courses cards have same fixed height\n\n5- blog page still have errors with i18 and not work you must fix all of this issues and it should have the following data in en and ar:\n5.1 first section data:\nRemote working might not only be feasible but beneficial. Stanford University found that remote employees were 13% more productive, with absolutely \"no difference in the effectiveness, performance ratings, or promotions\".\n\n5.2 second section data:\nIntroduction\nRemote work is a flexible work style where you work outside a traditional office environment. It comes in many forms depending on a company's size, stage, and philosophy.\nAt one extreme, employees may work from home occasionally. At the other end of the spectrum, fully remote employees stop commuting entirely and work whenever and wherever they're most productive.\nThis article outlines how and why people work remotely, how to find a remote job, common misconceptions about remote work and the different types of remote companies."
+      }
+    },
+    "errorLoading": "Error loading blog content",
+    "tryAgain": "Try Again",
+    "noBlogPosts": "No blog posts available at the moment",
+    "loading": "Loading blog posts...",
+    "error": {
+      "title": "Sorry, something went wrong",
+      "description": "We couldn't load the blog posts. Please try again.",
+      "retry": "Retry"
+    },
+    "empty": {
+      "title": "No posts available",
+      "description": "No blog posts found at the moment. Check back later for new content.",
+      "backToHome": "Back to Home"
+    },
+    "readMore": "Read More",
+    "sharePost": "Share Post",
+    "popularPosts": "Popular Posts",
+    "recentPosts": "Recent Posts",
+    "categories": "Categories",
+    "tags": "Tags",
+    "publishedOn": "Published on",
+    "byAuthor": "by",
+    "comments": "Comments",
+    "leaveComment": "Leave a Comment",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "yourComment": "Your Comment",
+    "submit": "Submit",
+    "search": "Search",
+    "searchPlaceholder": "Search blog posts..."
+  },
+  "invoice": {
+    "title": "INVOICE",
+    "billTo": "BILL TO",
+    "projectDetails": "PROJECT DETAILS",
+    "invoiceNo": "Invoice No:",
+    "invoiceDate": "Invoice Date:",
+    "description": "DESCRIPTION",
+    "qty": "QTY",
+    "rate": "RATE",
+    "total": "TOTAL",
+    "unitPrice": "Unit Price",
+    "subtotal": "SUBTOTAL",
+    "discount": "DISCOUNT",
+    "subtotalLessDiscount": "SUBTOTAL LESS DISCOUNT",
+    "taxRate": "TAX RATE",
+    "totalTax": "TOTAL TAX",
+    "balanceDue": "Balance Due",
+    "computerGenerated": "This is computer generated invoice no signature required",
+    "bankDetails": "Bank Details",
+    "beneficiaryName": "Beneficiary Name:",
+    "bankName": "Bank Name:",
+    "accountDetails": "Account Details:",
+    "accountCurrency": "Account Currency:",
+    "downloadPdf": "Download PDF",
+    "printing": "Printing...",
+    "startDate": "Start Date:",
+    "endDate": "End Date:",
+    "location": "Location:",
+    "paymentMethod": "Payment Method:",
+    "onlinePlatform": "Online Platform",
+    "courseEnrollment": "Course Enrollment & Access",
+    "companyInfo": {
+      "name": "RaiseUp",
+      "address": "Building 74, North 90, Cairo, Egypt",
+      "crNumber": "CR Number: 228024",
+      "phone": "+2-01008300242",
+      "email": "contact@raiseuplearn.com"
+    },
+    "bankInfo": {
+      "beneficiaryName": "AFAQ for learning solutions",
+      "bankName": "Banque Du Caire",
+      "accountDetails": "01905010256043|IBAN:EG470004122000001905010256043|SWIFT:BCAlEGCX0190|Branch code:190",
+      "currency": "EGP"
+    }
+  }
+}

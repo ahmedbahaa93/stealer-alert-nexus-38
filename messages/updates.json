@@ -1,0 +1,73 @@
+{
+  "contact-page": {
+    "contact-info": {
+      "title": "Contact Information",
+      "cards": [
+        {
+          "icon": "email",
+          "title": "Email",
+          "data": "Contact@raiseuplearn.com"
+        },
+        {
+          "icon": "website",
+          "title": "Website",
+          "data": "www.raiseuplearn.com"
+        },
+        {
+          "icon": "phone",
+          "title": "Start your career transformation today",
+          "data": "Contact RaiseUp!"
+        }
+      ],
+      "map": {
+        "icon": "map",
+        "title": "Our Locations"
+      }
+    }
+  },
+  "faqs-page": {
+    "faqs": [
+      {
+        "title": "Q1: What programs does RaiseUp offer?",
+        "description": "RaiseUp provides a wide range of IT and Business training programs designed to develop both technical and professional skills. Our programs focus on career-oriented learning, combining practical training with internationally recognized certifications to prepare individuals and organizations for real-world success."
+      },
+      {
+        "title": "Q2: Are RaiseUp programs internationally recognized?",
+        "description": "Yes. RaiseUp is an Official Cisco NetAcad Partner, and our certifications are respected by employers worldwide."
+      },
+      {
+        "title": "Q3: Can I study online with RaiseUp?",
+        "description": "Absolutely! We provide onsite and live online programs, both including hands-on labs and guided practice."
+      },
+      {
+        "title": "Q4: Who can benefit from RaiseUp training?",
+        "description": "We serve students, graduates, job seekers, career shifters, professionals, freelancers, and corporate teams looking to enhance their skills."
+      },
+      {
+        "title": "Q5: Where are RaiseUp branches located?",
+        "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+      }
+    ]
+  },
+  "about-page": {
+    "4th-section": {
+      "cards": [
+        {
+          "title": "EGYPT",
+          "address": "RaiseUp Learning Solutions, El-Nasr Rd, As Sarayat Ash Sharqeyah, Qesm Than Madinet Nasr, Cairo Governorate 4450233",
+          "code": "eg"
+        },
+        {
+          "title": "Saudi Arabia",
+          "address": "RaiseUp Learning Solutions, Riyadh Branch, KSA",
+          "code": "ksa"
+        },
+        {
+          "title": "UAE",
+          "address": "RaiseUp Learning Solutions, Dubai Headquarters, UAE",
+          "code": "uae"
+        }
+      ]
+    }
+  }
+}

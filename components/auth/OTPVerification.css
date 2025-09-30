@@ -1,0 +1,37 @@
+.progress-bar-container {
+    width: 100%;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    height: 0.25rem;
+    margin-top: 0.5rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(to right, #0f43b4, #61e4ae);
+    height: 0.25rem;
+    border-radius: 9999px;
+    transition: width 1s ease;
+}
+
+.otp-input {
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 2px solid #e5e7eb;
+    border-radius: 0.75rem;
+    transition: all 0.2s;
+    background-color: #f9fafb;
+}
+
+.otp-input:focus {
+    border-color: #0f43b4;
+    box-shadow: 0 0 0 2px rgba(15, 67, 180, 0.2);
+    background-color: white;
+}
+
+.otp-input-filled {
+    background: linear-gradient(to bottom right, rgba(15, 67, 180, 0.1), rgba(97, 228, 174, 0.1));
+}

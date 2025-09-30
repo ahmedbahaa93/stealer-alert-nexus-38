@@ -1,0 +1,88 @@
+/* 
+ * Enhanced Scrolling Fixes
+ * Smooth scrolling and performance optimizations
+ */
+
+/* Force hardware acceleration for smoother scrolling */
+html, body {
+  max-width: 100vw; /* Use viewport units for more precise control */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden !important; /* Force hide horizontal scrolling */
+}
+
+/* Force single scrollbar */
+html {
+  overflow-y: auto; /* Allow vertical scrolling on html only */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* Hide scrollbars unless active on IE/Edge */
+}
+
+body {
+  overflow-y: visible; /* No duplicate scrolling in body */
+  /* text-size-adjust has compatibility issues, removed */
+}
+
+/* Enhanced scroll smoothness */
+.home-page {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-y: visible; /* Allow vertical scroll */
+}
+
+/* Advanced carousel performance optimizations */
+.carousel-viewport {
+  -webkit-transform: translate3d(0, 0, 0); /* Force hardware acceleration */
+  transform: translate3d(0, 0, 0);
+  will-change: transform; /* Hint to browser about animation */
+  contain: content; /* Improve performance by isolating content */
+  scroll-behavior: smooth; /* Smoother scrolling */
+}
+
+.carousel-container-inner {
+  transition: transform 0.2s cubic-bezier(0.215, 0.61, 0.355, 1); /* More responsive easing */
+  transform: translate3d(0, 0, 0);
+}
+
+/* Optimize animations */
+.carousel-item {
+  transform: translateZ(0); /* Hardware acceleration */
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+}
+
+/* Disable pointer events on inactive carousel items for better performance */
+.carousel-item:not(:hover) {
+  pointer-events: none;
+}
+
+/* Re-enable pointer events when hovering over the carousel */
+.carousel-wrapper:hover .carousel-item {
+  pointer-events: auto;
+}
+
+/* Improved touch handling */
+@media (pointer: coarse) {
+  .carousel-viewport {
+    touch-action: pan-x; /* Optimize for horizontal swipe */
+  }
+}
+
+/* Container optimizations */
+.section-container {
+  position: relative;
+  width: 100%;
+  contain: layout; /* Isolation for better performance */
+}
+
+/* Fix any potential z-index issues */
+.carousel-wrapper {
+  isolation: isolate;
+}
+
+/* Performance class for smoother scrolling */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}

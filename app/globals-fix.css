@@ -1,0 +1,51 @@
+/* Global fixes for margin and padding issues */
+main {
+  position: relative;
+  width: 100%;
+  /* padding-top: var(--nav-height, 80px); Ensure the first section starts after navbar */
+}
+
+/* Fix for hover effects being cut off */
+.section-container {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 4rem 0; /* Standardized padding: 64px top/bottom */
+  overflow: visible !important;
+  z-index: 1;
+  min-height: 400px; /* Ensure enough height for hover effects */
+}
+
+/* Progress bar width fix */
+.progress-bar {
+  width: attr(data-width);
+}
+
+/* Global page layout */
+html {
+  overflow-x: hidden;
+  max-width: 100%;
+  -ms-overflow-style: none;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  position: relative;
+}
+
+/* Ensure only one scrollbar on the right */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(155, 155, 155, 0.5);
+  border-radius: 20px;
+  border: transparent;
+}

@@ -1,0 +1,71 @@
+/* 
+ * Enhanced Navigation Styling
+ * Improved styles for navbar and mobile navigation
+ */
+
+/* Clean modern layout for mobile view */
+@media (max-width: 768px) {
+  header {
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Add subtle shadow for depth */
+  header.scrolled {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Improved nav item spacing */
+.nav-item {
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+/* Clean hover effect for nav items */
+.nav-item::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  background-color: currentColor;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+/* Active nav item styling */
+.nav-item.active::after {
+  width: 100%;
+}
+
+/* Language switch and profile button styling */
+.lang-switch button,
+.profile-button {
+  padding: 0.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.lang-switch button:hover,
+.profile-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Mobile navigation button styling */
+.mobile-nav-button {
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

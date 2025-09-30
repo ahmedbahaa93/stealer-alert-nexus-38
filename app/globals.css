@@ -1,0 +1,940 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+@import '../components/ui/CustomToast.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-inter: var(--font-inter);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-primary-identity: var(--primary-identity);
+  --color-secondary-identity: var(--secondary-identity);
+  --color-faqs-card-open: var(--faqs-card-open);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #f3f8fb;
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(1 0 0);
+  --secondary: #f6fafa;
+  --secondary-foreground: #3f4040;
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --primary-identity: #0f43b4;
+  --secondary-identity: #61e4ae;
+  --faqs-card-open: #c5dee06e;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+:root.ar {
+  direction: rtl;
+  text-align: right !important;
+}
+
+/* globals.css or tailwind.css */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.terms-section {
+  background-image:
+    url('/assets/topology.svg'), url('/assets/topology.svg'),
+    url('/assets/topology.svg');
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:
+    right 0px,
+    right 70%,
+    left calc(100% + 200px); /* Default LTR */
+  background-size: 500px, 500px, 400px;
+}
+
+:root.ar .terms-section {
+  background-position:
+    left 0px,
+    left 70%,
+    right calc(100% + 200px); /* RTL override */
+}
+
+.common-bg {
+  background-image: url('/assets/topology.svg'), url('/assets/topology.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    right 0px,
+    left calc(100% + 100px); /* Default LTR */
+  background-size: 500px, 400px;
+}
+
+:root.ar .common-bg {
+  background-position:
+    left 0px,
+    right calc(100% + 100px); /* RTL override */
+}
+
+.about-section {
+  background-image: url('/assets/about-bg.svg');
+  background-repeat: no-repeat;
+  background-position: calc(-90px) calc(100% + 200px);
+  background-size: 500px;
+}
+
+:root.ar .about-section {
+  background-position: calc(100% + 30px) calc(100% + 200px);
+}
+
+.course-section {
+  background-image: url('/assets/course-bg.svg'), url('/assets/course-bg.svg');
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    calc(100% + 30px) -80px,
+    calc(0px - 100px) calc(100% + 150px); /* Default LTR */
+  background-size: 600px, 600px;
+}
+
+:root.ar .course-section {
+  background-position:
+    calc(0% - 150px) -80px,
+    calc(100% - 100px) calc(100% + 150px); /* RTL override */
+}
+
+/* Course cards styling - book background image removed for cleaner design */
+
+/* Course details page layout fixes */
+.course-details-container {
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+.course-details-container * {
+  box-sizing: border-box;
+}
+
+/* Enhanced sticky image fix for signup page */
+.signup-sticky-image {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 2rem;
+  align-self: flex-start;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  will-change: transform;
+  z-index: 10;
+}
+
+/* Signup form container to support sticky behavior */
+.signup-form-container {
+  display: flex;
+  min-height: 100vh;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.signup-form-left {
+  flex: 1;
+  max-height: none;
+  overflow: visible;
+}
+
+.signup-form-right {
+  flex: 1;
+  position: relative;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Testimonial card solid blue color fix */
+.testimonial-card-blue {
+  background-color: #0F43B4 !important;
+  opacity: 1 !important;
+}
+
+/* RTL support for testimonial cards */
+:root.ar .testimonial-card {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Responsive improvements */
+@media (max-width: 1023px) {
+  .course-details-container {
+    padding: 0 1rem;
+  }
+  
+  .signup-sticky-image {
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+  
+  .signup-form-container {
+    display: block;
+    min-height: initial;
+  }
+  
+  .signup-form-left,
+  .signup-form-right {
+    width: 100%;
+    height: auto;
+    overflow: visible;
+    min-height: initial;
+  }
+}
+
+/* Layout improvements for deployment */
+.page-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Better scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}
+
+.hero {
+  background-image: url('/heroImage.webp');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+:root.ar .hero {
+  background-image: url('/heroImage.webp');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  direction: rtl;
+  transform: scaleX(-1);
+}
+
+:root.ar .hero > div {
+  transform: scaleX(-1); /* Reset the transform for the hero content */
+}
+
+:root.ar .hero > * {
+  text-align: right;
+  direction: rtl;
+}
+
+/* Additional styles for RTL text alignment */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Hero section RTL text container */
+.hero-rtl-container {
+  direction: rtl;
+  text-align: right;
+  /* Don't modify layout, only text direction */
+}
+
+@media (max-width: 768px) {
+  .terms-section {
+    background-image: url('/assets/topology.svg'), url('/assets/topology.svg');
+    background-size: 250px, 250px;
+    background-attachment: fixed;
+    background-position:
+      right 0px,
+      left calc(100% + 100px);
+  }
+
+  :root.ar .terms-section {
+    background-position:
+      left 0px,
+      left 70%;
+  }
+
+  .common-bg {
+    background-size: 250px, 200px;
+    background-attachment: fixed;
+  }
+
+  .about-section {
+    background-size: 250px;
+    background-attachment: fixed;
+  }
+
+  .course-section {
+    background-size: 300px, 300px;
+  }
+
+  .hero {
+    background-size: 1000%;
+  }
+}
+
+/* Custom styles for signup page */
+.signup-page * {
+  font-family: var(--font-inter), 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Premium Skeleton Loading System - LinkedIn/Figma Style */
+
+/* Sophisticated entrance animation with micro-interactions */
+@keyframes skeleton-reveal {
+  0% {
+    opacity: 0;
+    transform: scale(0.98) translateY(12px);
+    filter: blur(2px);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.005) translateY(-1px);
+    filter: blur(0.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: blur(0);
+  }
+}
+
+/* Multi-layer shimmer effect with depth */
+@keyframes premium-shimmer {
+  0% {
+    transform: translateX(-100%) skewX(-15deg);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(200%) skewX(-15deg);
+    opacity: 0;
+  }
+}
+
+/* Secondary wave for depth illusion */
+@keyframes secondary-wave {
+  0% {
+    transform: translateX(-150%) skewX(10deg);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateX(250%) skewX(10deg);
+    opacity: 0;
+  }
+}
+
+/* Sophisticated breathing with easing */
+@keyframes premium-pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(0.998);
+  }
+}
+
+/* Organic floating animation */
+@keyframes skeleton-float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-2px) rotate(0.5deg);
+  }
+  66% {
+    transform: translateY(1px) rotate(-0.3deg);
+  }
+}
+
+/* Loading dots with elastic bounce */
+@keyframes elastic-dots {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(1) translateY(0);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.3) translateY(-8px);
+  }
+}
+
+/* Gradient expansion for buttons */
+@keyframes gradient-expand {
+  0% {
+    background-position: 200% center;
+    transform: scale(1);
+  }
+  50% {
+    background-position: 0% center;
+    transform: scale(1.01);
+  }
+  100% {
+    background-position: -200% center;
+    transform: scale(1);
+  }
+}
+
+/* Content fade-in sequence */
+@keyframes content-sequence {
+  0% {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Premium base skeleton with multi-layer effects */
+.skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted) / 0.8) 20%,
+    hsl(var(--muted-foreground) / 0.04) 40%,
+    hsl(var(--muted) / 0.8) 60%,
+    hsl(var(--muted)) 100%
+  );
+  animation: premium-pulse 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Primary shimmer wave */
+.skeleton-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    hsl(var(--background) / 0.6) 40%,
+    hsl(var(--primary) / 0.08) 50%,
+    hsl(var(--background) / 0.6) 60%,
+    transparent 100%
+  );
+  animation: premium-shimmer 2.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 0.3s;
+}
+
+/* Secondary depth wave */
+.skeleton-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    80deg,
+    transparent 0%,
+    hsl(var(--accent) / 0.03) 50%,
+    transparent 100%
+  );
+  animation: secondary-wave 3.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 1.1s;
+}
+
+/* Enhanced dark mode */
+.dark .skeleton-shimmer {
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted) / 0.7) 20%,
+    hsl(var(--muted-foreground) / 0.08) 40%,
+    hsl(var(--muted) / 0.7) 60%,
+    hsl(var(--muted)) 100%
+  );
+}
+
+.dark .skeleton-shimmer::before {
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    hsl(var(--background) / 0.3) 40%,
+    hsl(var(--primary) / 0.12) 50%,
+    hsl(var(--background) / 0.3) 60%,
+    transparent 100%
+  );
+}
+
+.dark .skeleton-shimmer::after {
+  background: linear-gradient(
+    80deg,
+    transparent 0%,
+    hsl(var(--accent) / 0.06) 50%,
+    transparent 100%
+  );
+}
+
+/* Sophisticated text skeleton variations */
+.skeleton-text-long {
+  width: 88%;
+  height: 0.9rem;
+  border-radius: 0.3rem;
+  position: relative;
+  animation: content-sequence 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.skeleton-text-medium {
+  width: 68%;
+  height: 0.8rem;
+  border-radius: 0.25rem;
+  position: relative;
+  animation: content-sequence 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.skeleton-text-short {
+  width: 42%;
+  height: 0.75rem;
+  border-radius: 0.25rem;
+  position: relative;
+  animation: content-sequence 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+.skeleton-text-title {
+  width: 78%;
+  height: 1.4rem;
+  border-radius: 0.4rem;
+  position: relative;
+  animation: content-sequence 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+/* Premium button with gradient sweep */
+.skeleton-button {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted-foreground) / 0.06) 25%,
+    hsl(var(--primary) / 0.04) 50%,
+    hsl(var(--muted-foreground) / 0.06) 75%,
+    hsl(var(--muted)) 100%
+  );
+  background-size: 300% 300%;
+  border-radius: 0.6rem;
+  overflow: hidden;
+  animation: gradient-expand 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  box-shadow: 
+    0 1px 3px hsl(var(--muted-foreground) / 0.05),
+    0 1px 2px hsl(var(--muted-foreground) / 0.03);
+}
+
+.skeleton-button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    hsl(var(--primary) / 0.1) 50%,
+    transparent 100%
+  );
+  animation: premium-shimmer 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 0.8s;
+}
+
+/* Advanced image placeholder with sophisticated pattern */
+.skeleton-image {
+  position: relative;
+  background: 
+    radial-gradient(circle at 25% 30%, hsl(var(--muted-foreground) / 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 75% 70%, hsl(var(--primary) / 0.02) 0%, transparent 40%),
+    radial-gradient(circle at 60% 20%, hsl(var(--accent) / 0.03) 0%, transparent 35%),
+    radial-gradient(circle at 15% 80%, hsl(var(--muted-foreground) / 0.04) 0%, transparent 40%),
+    linear-gradient(
+      140deg,
+      hsl(var(--muted)) 0%,
+      hsl(var(--muted-foreground) / 0.02) 30%,
+      hsl(var(--muted)) 60%,
+      hsl(var(--muted-foreground) / 0.02) 100%
+    );
+  overflow: hidden;
+  animation: skeleton-float 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.skeleton-image::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40%;
+  height: 40%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    45deg,
+    transparent 0%,
+    hsl(var(--muted-foreground) / 0.08) 50%,
+    transparent 100%
+  );
+  border-radius: 50%;
+  animation: premium-pulse 2.8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+  animation-delay: 0.5s;
+}
+
+/* Sophisticated icon with micro-animations */
+.skeleton-icon {
+  border-radius: 50%;
+  background: hsl(var(--muted));
+  position: relative;
+  overflow: hidden;
+  animation: skeleton-float 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+.skeleton-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65%;
+  height: 65%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    hsl(var(--muted-foreground) / 0.08) 0%,
+    transparent 70%
+  );
+  animation: premium-pulse 2.2s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Premium loading dots with elastic animation */
+.skeleton-loading-dots {
+  display: flex;
+  gap: 0.35rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-loading-dots span {
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--muted-foreground) / 0.3) 0%,
+    hsl(var(--primary) / 0.2) 50%,
+    hsl(var(--muted-foreground) / 0.3) 100%
+  );
+  animation: elastic-dots 1.8s cubic-bezier(0.68, -0.55, 0.265, 1.55) infinite;
+  box-shadow: 0 2px 4px hsl(var(--muted-foreground) / 0.1);
+}
+
+.skeleton-loading-dots span:nth-child(1) { animation-delay: 0ms; }
+.skeleton-loading-dots span:nth-child(2) { animation-delay: 200ms; }
+.skeleton-loading-dots span:nth-child(3) { animation-delay: 400ms; }
+
+/* Premium card entrance with sophisticated timing */
+.skeleton-card-animated {
+  animation: skeleton-reveal 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  transform-origin: center bottom;
+}
+
+/* Refined staggered delays for cards */
+.skeleton-card-animated:nth-child(1) { animation-delay: 0ms; }
+.skeleton-card-animated:nth-child(2) { animation-delay: 120ms; }
+.skeleton-card-animated:nth-child(3) { animation-delay: 240ms; }
+.skeleton-card-animated:nth-child(4) { animation-delay: 360ms; }
+.skeleton-card-animated:nth-child(5) { animation-delay: 480ms; }
+.skeleton-card-animated:nth-child(6) { animation-delay: 600ms; }
+
+/* Animation delay utilities for fine control */
+.skeleton-delay-0 { animation-delay: 0ms; }
+.skeleton-delay-50 { animation-delay: 50ms; }
+.skeleton-delay-100 { animation-delay: 100ms; }
+.skeleton-delay-150 { animation-delay: 150ms; }
+.skeleton-delay-200 { animation-delay: 200ms; }
+.skeleton-delay-250 { animation-delay: 250ms; }
+.skeleton-delay-300 { animation-delay: 300ms; }
+.skeleton-delay-400 { animation-delay: 400ms; }
+.skeleton-delay-500 { animation-delay: 500ms; }
+.skeleton-delay-600 { animation-delay: 600ms; }
+.skeleton-delay-700 { animation-delay: 700ms; }
+.skeleton-delay-800 { animation-delay: 800ms; }
+.skeleton-delay-900 { animation-delay: 900ms; }
+.skeleton-delay-1000 { animation-delay: 1000ms; }
+.skeleton-delay-1100 { animation-delay: 1100ms; }
+.skeleton-delay-1200 { animation-delay: 1200ms; }
+
+/* Progressive loading delay patterns */
+.skeleton-progressive-1 { animation-delay: 0ms; }
+.skeleton-progressive-2 { animation-delay: 80ms; }
+.skeleton-progressive-3 { animation-delay: 160ms; }
+.skeleton-progressive-4 { animation-delay: 240ms; }
+.skeleton-progressive-5 { animation-delay: 320ms; }
+.skeleton-progressive-6 { animation-delay: 400ms; }
+.skeleton-progressive-7 { animation-delay: 480ms; }
+.skeleton-progressive-8 { animation-delay: 560ms; }
+.skeleton-progressive-9 { animation-delay: 640ms; }
+.skeleton-progressive-10 { animation-delay: 720ms; }
+
+/* Floating animation for icons and special elements */
+.skeleton-floating {
+  animation: skeleton-float 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+}
+
+/* Sophisticated progressive loading */
+.skeleton-progressive {
+  animation: content-sequence 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+/* Enhanced breathing for important elements */
+.skeleton-breathing {
+  animation: premium-pulse 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Ultra-premium shimmer for hero elements */
+.skeleton-premium {
+  background: linear-gradient(
+    120deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted-foreground) / 0.02) 15%,
+    hsl(var(--primary) / 0.03) 25%,
+    hsl(var(--accent) / 0.02) 35%,
+    hsl(var(--muted-foreground) / 0.02) 45%,
+    hsl(var(--muted)) 55%,
+    hsl(var(--muted-foreground) / 0.02) 65%,
+    hsl(var(--primary) / 0.03) 75%,
+    hsl(var(--muted-foreground) / 0.02) 85%,
+    hsl(var(--muted)) 100%
+  );
+  background-size: 400% 100%;
+  animation: premium-shimmer 3.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    transparent 30%,
+    hsl(var(--background) / 0.4) 50%,
+    transparent 70%
+  );
+  animation: secondary-wave 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation-delay: 1.5s;
+}
+
+/* Legacy shimmer support */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted) / 0.8) 20%,
+    hsl(var(--muted-foreground) / 0.04) 40%,
+    hsl(var(--muted) / 0.8) 60%,
+    hsl(var(--muted)) 100%
+  );
+  animation: premium-pulse 2.4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* Deployment ready fixes */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* RTL language improvements */
+:root.ar {
+  direction: rtl;
+  text-align: right !important;
+}
+
+:root.ar * {
+  direction: rtl;
+}
+
+/* Course Discount Card Hover Effects Fix */
+.card-hover-section {
+  padding-top: 40px !important;
+  padding-bottom: 40px !important;
+  overflow: visible !important;
+  position: relative;
+  z-index: 1;
+  margin: 15px 0;
+}
+
+.card-hover-section .carousel-wrapper,
+.card-hover-section [data-orientation="horizontal"] {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+  overflow: visible !important;
+  min-height: 500px !important;
+}
+
+/* Fix carousel viewport overflow */
+.carousel-viewport,
+.carousel-content,
+.carousel-item {
+  overflow: visible !important;
+  position: relative;
+}
+
+.carousel-item:hover {
+  z-index: 10;
+}

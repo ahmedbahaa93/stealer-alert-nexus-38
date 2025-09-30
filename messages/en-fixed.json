@@ -1,0 +1,357 @@
+{
+  "HomePage": {
+    "title": "RaiseUp Learning Solutions – Take the Lead and Make the Future Happen Today",
+    "des": "RaiseUp Learning Solutions is a B2B and B2C training company specializing in IT, Networking & Cyber Security, Digital Arts, Business Training, Soft Skills, and Specialized Programs. With branches in Dubai (HQ), Riyadh, and Cairo, we deliver hands-on, internationally accredited programs that transform learners into confident professionals, ready for today's competitive job market.",
+    "list": {
+      "title": "Key Highlights",
+      "list": [
+        "Official Cisco NetAcad Training Partner",
+        "Expert Cisco-Certified Trainers",
+        "Practical, Lab-Based Learning",
+        "Internationally Accredited Certifications",
+        "Flexible Onsite & Online Options"
+      ]
+    },
+    "course-dis": "Our Best Selling Courses",
+    "more": "More Details",
+    "enroll": "Enroll",
+    "sale": "Sale",
+    "acquire": "Ways to acquire the course",
+    "success-partners": "Raiseup Success Partners",
+    "online": "Online",
+    "person": "In-person",
+    "rec": "Recorded",
+    "our": "Our Courses",
+    "success": "Success Metrics",
+    "achievementsHighlights": "Achievement Highlights",
+    "partners": "Our Partners",
+    "training-vendors": "Training Vendors",
+    "train": "10,000+ trainees",
+    "sub-train": "Number of students trained",
+    "company": "50+ companies",
+    "sup-company": "Number of partners",
+    "course-num": "+300 Course",
+    "sub-course": "Number of Courses",
+    "top-cat": "Top Categories",
+    "des-top": "Explore our Popular Categories",
+    "test": "Student Reviews",
+    "partners-logos": {
+      "eefe": "Education For Employment Egypt",
+      "maaden": "Maaden",
+      "mcit": "Ministry of Communications and Information Technology",
+      "mcit-sa": "Ministry of Communications and Information Technology of Saudi Arabia",
+      "mod": "Ministry of Defense",
+      "stc": "STC",
+      "tahakom": "Tahakom",
+      "tdh": "Terre des hommes"
+    },
+    "vendors": {
+      "cisco": "Cisco Learning Partner",
+      "microsoft": "Microsoft Cloud Training Services",
+      "aws": "AWS Partner Network",
+      "comptia": "CompTIA Authorized Partner",
+      "oracle": "Oracle Partner",
+      "eccouncil": "EC-Council Accredited Training Center",
+      "pecb": "PECB",
+      "isaca": "ISACA",
+      "atd": "Association for Talent Development",
+      "cipd": "CIPD",
+      "cips": "Chartered Institute of Procurement & Supply",
+      "ascm": "Association for Supply Chain Management"
+    },
+    "Home": {
+      "Testimonials": {
+        "error": {
+          "title": "Unable to load testimonials",
+          "message": "There was a problem loading the testimonials. Please try again later."
+        },
+        "empty": {
+          "title": "No testimonials yet",
+          "message": "Stay tuned! Reviews from our students will appear here soon."
+        }
+      }
+    },
+    "blog": {
+      "error": {
+        "title": "Unable to load blog content",
+        "message": "There was a problem loading the blog posts. Please try again later.",
+        "retry": "Try Again"
+      },
+      "empty": {
+        "title": "No blog posts yet",
+        "message": "Stay tuned! New blog posts will appear here soon."
+      }
+    },
+    "cat-card": [
+      {
+        "icon": "art",
+        "title": "Art & Design",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "dev",
+        "title": "Development",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "comunycate",
+        "title": "Communication",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "video",
+        "title": "Videography",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "record",
+        "title": "Photography",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "markiting",
+        "title": "Marketing",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "content",
+        "title": "Content writing",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "finance",
+        "title": "Finance",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "since",
+        "title": "Science",
+        "courseCount": "38 Courses"
+      },
+      {
+        "icon": "art",
+        "title": "Network",
+        "courseCount": "38 Courses"
+      }
+    ],
+    "radicals": "Our Trending Article",
+    "article-card": {
+      "date": "14 June 2023",
+      "comment": "Comment (06)",
+      "title": "How do you choose the right course for you?",
+      "message": "Define your goal: Know what you want to learn and why (skill development, promotion, change of field).Assess your current level: Determine whether you're a beginner or have experience and want to advance at a specific point.",
+      "action": "Learn More"
+    },
+    "errors": {
+      "our-courses-title": "Our Courses",
+      "network-error-title": "Connection Problem",
+      "network-error-message": "Unable to load courses. Please check your internet connection and try again.",
+      "general-error-title": "Something went wrong",
+      "general-error-message": "We couldn't load the courses at this time. Please try again in a moment.",
+      "retry-button": "Try Again",
+      "network-help": "Please ensure you have a stable internet connection.",
+      "top-categories-title": "Top Categories",
+      "top-categories-subtitle": "Explore our Popular Categories",
+      "categories-network-error-message": "Unable to load categories. Please check your internet connection and try again.",
+      "categories-general-error-message": "We couldn't load the categories at this time. Please try again in a moment."
+    },
+    "empty": {
+      "our-courses-title": "Our Courses",
+      "no-courses-title": "No Courses Available",
+      "no-courses-message": "We're working on adding new courses. Please check back soon for exciting learning opportunities!",
+      "browse-courses": "Browse All Courses",
+      "request-course": "Request a Course",
+      "check-back-message": "New courses are added regularly.",
+      "contact-support": "Contact our support team for assistance.",
+      "top-categories-title": "Top Categories",
+      "top-categories-subtitle": "Explore our Popular Categories",
+      "no-categories-title": "No Categories Available",
+      "no-categories-message": "We're working on organizing new categories. Please check back soon for exciting topics!",
+      "browse-categories": "Browse All Categories",
+      "suggest-category": "Suggest a Category",
+      "categories-check-back-message": "New categories are added regularly.",
+      "no-articles-title": "No Articles Yet",
+      "no-articles-message": "We're working on adding new articles. Check back soon for exciting content!",
+      "articles-check-back-message": "New articles are added regularly."
+    }
+  },
+  "faqs-page": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our programs and services",
+    "faqs": [
+      {
+        "title": "What programs does RaiseUp offer?",
+        "description": "RaiseUp provides a wide range of IT and Business training programs designed to develop both technical and professional skills. Our programs focus on career-oriented learning, combining practical training with internationally recognized certifications to prepare individuals and organizations for real-world success."
+      },
+      {
+        "title": "Are RaiseUp programs internationally recognized?",
+        "description": "Yes. RaiseUp is an Official Cisco NetAcad Partner, and our certifications are respected by employers worldwide."
+      },
+      {
+        "title": "Can I study online with RaiseUp?",
+        "description": "Absolutely! We provide onsite and live online programs, both including hands-on labs and guided practice."
+      },
+      {
+        "title": "Who can benefit from RaiseUp training?",
+        "description": "We serve students, graduates, job seekers, career shifters, professionals, freelancers, and corporate teams looking to enhance their skills."
+      },
+      {
+        "title": "Where are RaiseUp branches located?",
+        "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+      }
+    ]
+  },
+  "about-page": {
+    "title": "About Us",
+    "1st-section": {
+      "title": "About RaiseUp Learning Solutions",
+      "description": "At RaiseUp Learning Solutions, we go beyond traditional training. We specialize in career transformation by combining expert-led instruction, immersive labs, and international accreditation."
+    },
+    "2nd-section": {
+      "title": "Our Training Fields",
+      "list": [
+        {
+          "title": "Information Technology (IT)",
+          "items": [
+            "Development",
+            "Networking & Cyber Security",
+            "Digital Arts",
+            "IT Management"
+          ]
+        },
+        {
+          "title": "Business Training"
+        },
+        {
+          "title": "Soft Skills",
+          "items": ["General & Specialized"]
+        },
+        {
+          "title": "Specialized Professional Programs"
+        }
+      ]
+    },
+    "3rd-section": {
+      "title": "Our Promise",
+      "items": [
+        "Practical, hands-on training for real-world careers",
+        "Internationally recognized certifications to boost employability",
+        "State-of-the-art labs and simulation tools for job-ready skills",
+        "Flexible onsite and online learning options"
+      ],
+      "conclusion": "With RaiseUp, you're not just attending a course—you're building a career."
+    },
+    "4th-section": {
+      "title": "Global Presence",
+      "cards": [
+        {
+          "title": "EGYPT",
+          "address": "RaiseUp Learning Solutions, El-Nasr Rd, As Sarayat Ash Sharqeyah, Qesm Than Madinet Nasr, Cairo Governorate 4450233",
+          "code": "eg"
+        },
+        {
+          "title": "Saudi Arabia",
+          "address": "RaiseUp Learning Solutions, Riyadh Branch, KSA",
+          "code": "ksa"
+        },
+        {
+          "title": "UAE",
+          "address": "RaiseUp Learning Solutions, Dubai Headquarters, UAE",
+          "code": "uae"
+        }
+      ],
+      "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+    }
+  },
+  "contact-page": {
+    "title": "Get in Touch with RaiseUp Learning Solutions",
+    "description": "Start your career transformation today – contact RaiseUp!",
+    "contact-info": {
+      "title": "Contact Information",
+      "cards": [
+        {
+          "icon": "email",
+          "title": "Email",
+          "data": "Contact@raiseuplearn.com"
+        },
+        {
+          "icon": "web",
+          "title": "Website",
+          "data": "www.raiseuplearn.com"
+        },
+        {
+          "icon": "location",
+          "title": "Cairo Branch",
+          "data": "RaiseUp Learning Solutions, El-Nasr Rd, As Sarayat Ash Sharqeyah, Qesm Than Madinet Nasr, Cairo Governorate 4450233, Egypt"
+        },
+        {
+          "icon": "location",
+          "title": "Other Branches",
+          "data": "Dubai, UAE – Headquarters\nRiyadh, KSA – Branch"
+        }
+      ],
+      "map": {
+        "icon": "map",
+        "title": "View on Google Maps"
+      }
+    },
+    "form": {
+      "select": {
+        "title": "Choose Your Country ",
+        "option": [
+          {
+            "title": "EGYPT",
+            "code": "eg"
+          },
+          {
+            "title": "Saudi Arabia",
+            "code": "ksa"
+          },
+          {
+            "title": "UAE",
+            "code": "uae"
+          }
+        ]
+      },
+      "form": {
+        "title": "Send Message",
+        "send": "Send",
+        "sending": "Sending...",
+        "fields": {
+          "inputs": [
+            {
+              "label": "Name",
+              "place-holder": "Enter Your Name",
+              "error": "Name is required"
+            },
+            {
+              "label": "Email",
+              "place-holder": "Enter Your Email",
+              "error": "Email is required",
+              "invalid": "Invalid email address"
+            }
+          ],
+          "select": {
+            "title": "Subject",
+            "place-holder": "Enter Subject",
+            "option": [
+              "General Inquiry",
+              "Course Information",
+              "Technical Support"
+            ],
+            "error": "Subject is required"
+          },
+          "radio": ["For business", "For individual"],
+          "radio_error": "Please select a type",
+          "area": {
+            "label": "Message",
+            "place-holder": "Enter Your Message Here...",
+            "error": "Message is required",
+            "min": "Message must be at least 10 characters",
+            "max": "Message must not exceed 500 characters"
+          }
+        }
+      }
+    }
+  }
+}

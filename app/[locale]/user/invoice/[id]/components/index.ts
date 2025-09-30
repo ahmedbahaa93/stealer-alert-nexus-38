@@ -1,0 +1,1 @@
+export { FigmaInvoiceDesign } from './FigmaInvoiceDesign';

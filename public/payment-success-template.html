@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Success - Redirecting...</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 50px;
+        background-color: #f0f8ff;
+      }
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        background: white;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .success-icon {
+        font-size: 48px;
+        color: #28a745;
+        margin-bottom: 20px;
+      }
+      .spinner {
+        border: 4px solid #f3f3f3;
+        border-top: 4px solid #3498db;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 2s linear infinite;
+        margin: 20px auto;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="success-icon">✅</div>
+      <h1>Payment Successful!</h1>
+      <p>Your payment has been processed successfully.</p>
+      <p>Redirecting you to the course platform...</p>
+      <div class="spinner"></div>
+      <p>
+        <small
+          >If you are not redirected automatically,
+          <a href="#" id="manual-redirect">click here</a>.</small
+        >
+      </p>
+    </div>
+
+    <!-- Payment Response Data (This should be populated by Paymob/Strapi) -->
+    <script type="application/json" id="payment-response">
+      {
+        "status": "success",
+        "code": 200,
+        "message": "Payment confirmed! Your booking has been successfully completed.",
+        "data": {
+          "transactionId": 332385463,
+          "bookingStatus": "Confirmed",
+          "paymentStatus": "Partial",
+          "redirectUrl": "https://raiseup-front.vercel.app/en/payments"
+        }
+      }
+    </script>
+
+    <!-- Include the payment handler script -->
+    <script src="https://raiseup-front.vercel.app/js/payment-handler.js"></script>
+
+    <!-- Manual redirect fallback -->
+    <script>
+      document
+        .getElementById('manual-redirect')
+        .addEventListener('click', function (e) {
+          e.preventDefault();
+          // Try to extract response and redirect manually
+          if (window.handlePaymentResponse) {
+            const responseElement = document.getElementById('payment-response');
+            if (responseElement) {
+              try {
+                const responseData = JSON.parse(responseElement.textContent);
+                window.handlePaymentResponse(responseData);
+              } catch (error) {
+                console.error('Error parsing payment response:', error);
+                // Fallback to home page
+                window.location.href = 'https://raiseup-front.vercel.app/en';
+              }
+            }
+          }
+        });
+
+      // Fallback timeout redirect
+      setTimeout(function () {
+        if (!window.location.href.includes('/payment-result')) {
+          console.log('Fallback redirect triggered');
+          window.location.href = 'https://raiseup-front.vercel.app/en';
+        }
+      }, 10000); // 10 seconds fallback
+    </script>
+  </body>
+</html>

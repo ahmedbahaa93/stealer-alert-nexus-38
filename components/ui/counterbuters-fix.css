@@ -1,0 +1,52 @@
+/* 
+ * Counterbuters Component Fixes
+ * This file contains fixes for the Counterbuters component and its cards
+ */
+
+/* Fix card container overflow on hover */
+.counterbuters-wrapper {
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+
+/* Fix card scale overflow issues */
+.counterbuters-card-wrapper {
+  padding: 20px;
+  transition: transform 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* Smooth hover effect */
+.counterbuters-card {
+  transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  transform: translateZ(0); /* Hardware acceleration */
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
+/* Fix carousel item height to prevent cutting off content */
+.counterbuters-carousel-item {
+  padding: 1.5rem 0;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ensure parent has enough space for scaling */
+.counterbuters-section {
+  padding: 1rem 0;
+  overflow: visible !important;
+}
+
+/* Fix for border gradient component */
+.counterbuters-border {
+  transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+/* Override any overflow hidden that might cut off the scaling effect */
+.overflow-fix {
+  overflow: visible !important;
+}

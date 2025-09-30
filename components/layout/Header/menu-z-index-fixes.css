@@ -1,0 +1,63 @@
+/* 
+ * This file provides additional z-index fixes to ensure the mobile menu 
+ * is always displayed on top of other content including Hero sections
+ */
+
+/* Make sure the menu container has top priority */
+.stunning-menu,
+.stunning-backdrop {
+  isolation: isolate; /* Creates a new stacking context */
+  position: relative;
+  z-index: 100000 !important; /* Force highest priority with !important */
+}
+
+/* Ensure correct stacking context for menu items */
+.menu-header,
+.menu-content,
+.menu-nav {
+  position: relative;
+  z-index: 2;
+}
+
+/* Apply higher z-index to toggle button when menu is open */
+button.menu-toggle {
+  position: relative;
+  z-index: 10000; /* Ultra-high z-index when menu is open */
+}
+
+/* Fix any potential issues with other high z-index components */
+.stunning-menu::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Ensure global stacking context doesn't interfere */
+#__next,
+body > div {
+  z-index: auto !important;
+}
+
+/* Body class to handle global stacking when menu is open */
+body.menu-open .hero,
+body.menu-open [data-section="hero"] {
+  position: relative;
+  z-index: 1 !important; /* Force lower z-index for hero when menu is open */
+}
+
+/* Ensure menu is on top of all content */
+body.menu-open .stunning-backdrop,
+body.menu-open .stunning-menu {
+  position: relative;
+  z-index: 100001 !important; /* Force highest priority with !important */
+}
+
+/* Extra fix for Safari/iOS */
+@supports (-webkit-touch-callout: none) {
+  .stunning-backdrop,
+  .stunning-menu {
+    transform: translateZ(0);
+  }
+}

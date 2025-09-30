@@ -1,0 +1,5 @@
+/* Article detail page dot pattern */
+.article-detail-pattern {
+  background-image: radial-gradient(circle at 25px 25px, #0F43B4 2px, transparent 0);
+  background-size: 50px 50px;
+}

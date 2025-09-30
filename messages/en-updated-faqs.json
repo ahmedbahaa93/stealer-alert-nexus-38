@@ -1,0 +1,28 @@
+{
+  "faqs-page": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our programs and services",
+    "faqs": [
+      {
+        "title": "What programs does RaiseUp offer?",
+        "description": "RaiseUp provides a wide range of IT and Business training programs designed to develop both technical and professional skills. Our programs focus on career-oriented learning, combining practical training with internationally recognized certifications to prepare individuals and organizations for real-world success."
+      },
+      {
+        "title": "Are RaiseUp programs internationally recognized?",
+        "description": "Yes. RaiseUp is an Official Cisco NetAcad Partner, and our certifications are respected by employers worldwide."
+      },
+      {
+        "title": "Can I study online with RaiseUp?",
+        "description": "Absolutely! We provide onsite and live online programs, both including hands-on labs and guided practice."
+      },
+      {
+        "title": "Who can benefit from RaiseUp training?",
+        "description": "We serve students, graduates, job seekers, career shifters, professionals, freelancers, and corporate teams looking to enhance their skills."
+      },
+      {
+        "title": "Where are RaiseUp branches located?",
+        "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+      }
+    ]
+  }
+}

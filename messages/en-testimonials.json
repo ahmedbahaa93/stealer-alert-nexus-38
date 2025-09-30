@@ -1,0 +1,14 @@
+{
+  "Home": {
+    "Testimonials": {
+      "error": {
+        "title": "Unable to load testimonials",
+        "message": "There was a problem loading the testimonials. Please try again later."
+      },
+      "empty": {
+        "title": "No testimonials yet",
+        "message": "Stay tuned! Reviews from our students will appear here soon."
+      }
+    }
+  }
+}

@@ -1,0 +1,150 @@
+{
+  "HomePage": {
+    "title": "RaiseUp Learning Solutions – Take the Lead and Make the Future Happen Today",
+    "des": "RaiseUp Learning Solutions is a B2B and B2C training company specializing in IT, Networking & Cyber Security, Digital Arts, Business Training, Soft Skills, and Specialized Programs. With branches in Dubai (HQ), Riyadh, and Cairo, we deliver hands-on, internationally accredited programs that transform learners into confident professionals, ready for today's competitive job market.",
+    "list": {
+      "title": "Key Highlights",
+      "list": [
+        "Official Cisco NetAcad Training Partner",
+        "Expert Cisco-Certified Trainers",
+        "Practical, Lab-Based Learning",
+        "Internationally Accredited Certifications",
+        "Flexible Onsite & Online Options"
+      ]
+    },
+    "partners-logos": {
+      "eefe": "Education For Employment Egypt",
+      "maaden": "Maaden",
+      "mcit": "Ministry of Communications and Information Technology",
+      "mcit-sa": "Ministry of Communications and Information Technology of Saudi Arabia",
+      "mod": "Ministry of Defense",
+      "stc": "STC",
+      "tahakom": "Tahakom",
+      "tdh": "Terre des hommes"
+    },
+    "vendors": {
+      "cisco": "Cisco Learning Partner",
+      "microsoft": "Microsoft Cloud Training Services",
+      "aws": "AWS Partner Network",
+      "comptia": "CompTIA Authorized Partner",
+      "oracle": "Oracle Partner",
+      "eccouncil": "EC-Council Accredited Training Center",
+      "pecb": "PECB",
+      "isaca": "ISACA",
+      "atd": "Association for Talent Development",
+      "cipd": "CIPD",
+      "cips": "Chartered Institute of Procurement & Supply",
+      "ascm": "Association for Supply Chain Management"
+    }
+  },
+  "about-page": {
+    "title": "About Us",
+    "1st-section": {
+      "title": "About RaiseUp Learning Solutions",
+      "description": "At RaiseUp Learning Solutions, we go beyond traditional training. We specialize in career transformation by combining expert-led instruction, immersive labs, and international accreditation."
+    },
+    "2nd-section": {
+      "title": "Our Training Fields",
+      "list": [
+        {
+          "title": "Information Technology (IT)",
+          "items": [
+            "Development",
+            "Networking & Cyber Security",
+            "Digital Arts",
+            "IT Management"
+          ]
+        },
+        {
+          "title": "Business Training"
+        },
+        {
+          "title": "Soft Skills",
+          "items": ["General & Specialized"]
+        },
+        {
+          "title": "Specialized Professional Programs"
+        }
+      ]
+    },
+    "3rd-section": {
+      "title": "Our Promise",
+      "items": [
+        "Practical, hands-on training for real-world careers",
+        "Internationally recognized certifications to boost employability",
+        "State-of-the-art labs and simulation tools for job-ready skills",
+        "Flexible onsite and online learning options"
+      ],
+      "conclusion": "With RaiseUp, you're not just attending a course—you're building a career."
+    }
+  },
+  "contact-page": {
+    "title": "Get in Touch with RaiseUp Learning Solutions",
+    "description": "Start your career transformation today – contact RaiseUp!",
+    "contact-info": {
+      "title": "Contact Information",
+      "cards": [
+        {
+          "icon": "email",
+          "title": "Email",
+          "data": "Contact@raiseuplearn.com"
+        },
+        {
+          "icon": "web",
+          "title": "Website",
+          "data": "www.raiseuplearn.com"
+        },
+        {
+          "icon": "location",
+          "title": "Cairo Branch",
+          "data": "RaiseUp Learning Solutions, El-Nasr Rd, As Sarayat Ash Sharqeyah, Qesm Than Madinet Nasr, Cairo Governorate 4450233, Egypt"
+        },
+        {
+          "icon": "location",
+          "title": "Other Branches",
+          "data": "Dubai, UAE – Headquarters\nRiyadh, KSA – Branch"
+        }
+      ],
+      "map": {
+        "icon": "map",
+        "title": "View on Google Maps"
+      }
+    },
+    "form": {
+      "title": "Contact Form",
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Email",
+        "phone": "Phone Number",
+        "inquiry": "Your Inquiry / Program Interest",
+        "submit": "Submit"
+      }
+    }
+  },
+  "faqs-page": {
+    "title": "Frequently Asked Questions",
+    "description": "Find answers to common questions about our programs and services",
+    "faqs": [
+      {
+        "title": "What programs does RaiseUp offer?",
+        "description": "RaiseUp provides a wide range of IT and Business training programs designed to develop both technical and professional skills. Our programs focus on career-oriented learning, combining practical training with internationally recognized certifications to prepare individuals and organizations for real-world success."
+      },
+      {
+        "title": "Are RaiseUp programs internationally recognized?",
+        "description": "Yes. RaiseUp is an Official Cisco NetAcad Partner, and our certifications are respected by employers worldwide."
+      },
+      {
+        "title": "Can I study online with RaiseUp?",
+        "description": "Absolutely! We provide onsite and live online programs, both including hands-on labs and guided practice."
+      },
+      {
+        "title": "Who can benefit from RaiseUp training?",
+        "description": "We serve students, graduates, job seekers, career shifters, professionals, freelancers, and corporate teams looking to enhance their skills."
+      },
+      {
+        "title": "Where are RaiseUp branches located?",
+        "description": "Our headquarters is in Dubai, UAE, with branches in Riyadh (KSA) and Cairo (Egypt)."
+      }
+    ]
+  }
+}

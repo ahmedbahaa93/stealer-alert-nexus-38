@@ -1,0 +1,277 @@
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ensure dropdown menus appear above navbar with perfect z-index hierarchy */
+.fixed-nav [data-radix-popper-content-wrapper] {
+  z-index: 9998 !important;
+}
+
+/* Language switcher specific z-index - highest priority */
+.fixed-nav .lang-switch [data-radix-select-content] {
+  z-index: 9998 !important;
+  position: fixed !important;
+}
+
+/* Additional radix UI dropdown fixes */
+[data-radix-select-content] {
+  z-index: 9998 !important;
+}
+
+[data-radix-popper-content-wrapper] {
+  z-index: 9998 !important;
+}
+
+@media (min-width: 1024px) {
+  .fixed-nav nav {
+    max-height: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-hidden {
+  transform: translateY(-100%);
+}
+
+/* Additional spacing to prevent content from jumping when nav becomes fixed */
+.nav-spacer {
+  height: var(--nav-height, 65px);
+  display: none;
+}
+
+.nav-spacer.active {
+  display: block;
+}
+
+/* Fix hero section padding to prevent it from being hidden under the navbar */
+body > main > div:first-child,
+body > main > div > section:first-child,
+body > main > section:first-child,
+[data-section="hero"] {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+.hero {
+  min-height: calc(100vh - var(--nav-height, 80px));
+  height: auto;
+  margin-top: var(--nav-height, 80px);
+}
+
+/* Responsive navbar improvements */
+@media (max-width: 640px) {
+  :root {
+    --nav-height: 55px;
+  }
+  
+  .nav-spacer {
+    height: 55px;
+  }
+  
+  /* Add rounded corners on small screens */
+  .fixed-nav nav {
+    border-radius: 0 0 20px 20px;
+    margin: 0 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  body > main > div:first-child,
+  body > main > div > section:first-child,
+  body > main > section:first-child,
+  [data-section="hero"] {
+    padding-top: calc(60px + 15px) !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  :root {
+    --nav-height: 70px;
+  }
+  
+  .nav-spacer {
+    height: 70px;
+  }
+  
+  /* Add subtle rounded corners on tablet screens */
+  .fixed-nav nav {
+    border-radius: 0 0 16px 16px;
+    margin: 0 12px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+  }
+  
+  body > main > div:first-child,
+  body > main > div > section:first-child,
+  body > main > section:first-child,
+  [data-section="hero"] {
+    padding-top: calc(70px + 18px) !important;
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --nav-height: 80px;
+  }
+  
+  .nav-spacer {
+    height: 80px;
+  }
+}
+
+/* Navbar hover effects */
+.fixed-nav nav {
+  transition: all 0.3s ease;
+}
+
+.fixed-nav:hover {
+  transform: translateY(0);
+}
+
+/* Dark/Light nav color variations */
+.nav-light {
+  background-color: white !important;
+  color: var(--primary-identity) !important;
+}
+
+.nav-dark {
+  background-color: #0f43b4 !important;
+  color: white !important;
+}
+
+.nav-light a:hover {
+  color: var(--secondary-identity);
+}
+
+.nav-dark a:hover {
+  color: var(--secondary-identity);
+}
+
+/* Additional styles for dark nav text and components */
+.nav-dark,
+.nav-dark * {
+  color: white !important;
+}
+
+.nav-dark a,
+.nav-dark button,
+.nav-dark span,
+.nav-dark div {
+  color: white !important;
+}
+
+.nav-dark svg,
+.nav-dark path {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Override specific component styles for dark nav */
+.nav-dark .text-primary-identity {
+  color: white !important;
+}
+
+.nav-dark .text-blue-500 {
+  color: white !important;
+}
+
+.nav-dark .text-blue-600 {
+  color: white !important;
+}
+
+.nav-dark .text-blue-700 {
+  color: white !important;
+}
+
+.nav-dark .text-gray-800 {
+  color: white !important;
+}
+
+.nav-dark .text-gray-700 {
+  color: white !important;
+}
+
+/* Ensure language switcher adapts properly */
+.nav-dark .bg-white {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.nav-dark .border-blue-500 {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Ensure hover states work properly */
+.nav-dark a:hover {
+  color: var(--secondary-identity) !important;
+}
+
+.nav-dark button:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.nav-dark svg:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Mobile overlay improvements */
+@media (max-width: 768px) {
+  .mobile-nav-overlay {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+}
+
+/* Ensure proper z-indexing for dropdowns */
+.dropdown-content {
+  z-index: 100;
+}
+
+/* Global dropdown z-index fixes */
+[data-radix-popper-content-wrapper] {
+  z-index: 100 !important;
+}
+
+[data-radix-select-content] {
+  z-index: 110 !important;
+}
+
+/* Language switcher in navbar specific fix */
+nav [data-radix-select-content] {
+  z-index: 120 !important;
+  position: relative;
+}
+
+/* Logo responsive scaling */
+.nav-logo {
+  transition: transform 0.2s ease;
+}
+
+.nav-logo:hover {
+  transform: scale(1.05);
+}
+
+/* Language switcher responsive improvements */
+.lang-switch {
+  min-width: -webkit-fill-available;
+  min-width: fit-content;
+}
+
+/* Mobile navigation responsive improvements */
+.mobile-nav-item {
+  transition: all 0.3s ease;
+  transform-origin: left center;
+}
+
+.mobile-nav-item:hover {
+  transform: translateX(8px);
+  background-color: rgba(255, 255, 255, 0.1);
+}

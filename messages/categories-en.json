@@ -1,0 +1,28 @@
+{
+  "Categories": {
+    "errors": {
+      "errorTitle": "Error Loading Courses",
+      "errorMessage": "We couldn't load the courses at this time. Please try again in a moment.",
+      "retry": "Try Again",
+      "subCategoriesError": "Unable to load subcategories",
+      "coursesError": "Unable to load courses for this subcategory"
+    },
+    "empty": {
+      "emptyTitle": "No Courses Found",
+      "emptyMessage": "There are no courses available in this category at the moment.",
+      "browseMoreCourses": "Browse Other Categories",
+      "noSubCategories": "No subcategories found",
+      "noCourses": "No courses found in this subcategory"
+    },
+    "loading": {
+      "loadingSubCategories": "Loading subcategories...",
+      "loadingCourses": "Loading courses..."
+    },
+    "actions": {
+      "selectSubCategory": "Select",
+      "moreDetails": "More Details",
+      "enrollNow": "Enroll Now",
+      "chooseMajor": "Choose the major you want"
+    }
+  }
+}
